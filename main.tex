@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% ModernCV with BibLaTeX-based Multi-section Publications
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% ModernCV theme
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+
+% Geometry
+\usepackage[scale=0.85]{geometry}
+
+
+% BibLaTeX setup 
+\usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
+\usepackage{pdfpages}
+\ExecuteBibliographyOptions{doi=true, url=true, isbn=false}
+
+\addbibresource{journal.bib}
+\addbibresource{conference.bib}
+\addbibresource{corresponding.bib}
+\addbibresource{whitepapers.bib}
+\addbibresource{talks.bib}
+\addbibresource{gradthesis.bib}
+\addbibresource{ugradthesis.bib}
+\addbibresource{software.bib}
+\addbibresource{internal.bib}
+
+% Declare categories
+\DeclareBibliographyCategory{journal}
+\DeclareBibliographyCategory{conference}
+\DeclareBibliographyCategory{corresponding}
+\DeclareBibliographyCategory{whitepapers}
+\DeclareBibliographyCategory{talks}
+\DeclareBibliographyCategory{gradthesis}
+\DeclareBibliographyCategory{ugradthesis}
+\DeclareBibliographyCategory{software}
+\DeclareBibliographyCategory{achievements}
+
+% categorize entries by source file
+\AtBeginDocument{%
+  \nocite{*} % Load all entries from all .bib files
+  %\forcsvlist{\addtocategory{journal}}{bird2025balrog, cannon2025guidelines, drolet2024increased, v15102108, 10.1371/journal.pone.0235303, yiyuan2019epps, ho2018single, cumming2016future}
+}
+
+% Font & links
+\usepackage{fontawesome5}
+\usepackage{marvosym} 
+\usepackage{academicons}
+%\usepackage[colorlinks]{hyperref}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+% Personal Data
+%\firstname{David}
+%\familyname{Molik}
+%\title{Curriculum Vitae}
+%\address{University Library}{Kansas State University}
+%\mobile{+1 (716) 982-5235, +1 (785) 532-5399}
+%\email{molik@ksu.edu} 
+%\homepage{http://david.molik.co}{david.molik.co}
+%\extrainfo{
+%  \faGithub\href{https://github.com/molikd}{ molikd} \quad
+%  \faLinkedin\href{https://www.linkedin.com/in/dmolik/}{ dmolik} \quad
+%  \aiOrcid\href{https://orcid.org/0000-0003-3192-6538}{ 0000-0003-3192-6538}
+%}
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+%\photo[70pt][0.3pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+%\usepackage{multibbl}
+\newcommand\Colorhref[3][violet]{\href{#2}{\color{#1}#3}}
+
+\begin{document}
+
+% --- Cover Page ---
+\begin{titlepage}
+    \raggedright
+    \vspace*{1.25in}
+
+    {\color{color1}\LARGE\bfseries Tenure and Promotion Portfolio\par}
+    \vspace{0.25in}
+
+    {\color{color1}\rule{\textwidth}{1.5pt}}
+
+    \vspace{0.75in}
+
+    {\Large David Molik, Ph.D.\par}
+    \vspace{0.15in}
+
+    {\normalsize Associate Professor\par}
+    {\normalsize Department Head, Open Publishing Exchange\par}
+    {\normalsize Kansas State University Libraries\par}
+
+    \vspace{0.75in}
+
+    {\normalsize Submitted for Consideration of Tenure\par}
+
+    \vfill
+
+    {\normalsize \today\par}
+\end{titlepage}
+\newpage
+
+% recomendation form
+\includepdf[pages=-]{recomendation.pdf}
+
+
+% --- Employment History ---
+\clearpage
+\thispagestyle{empty}
+
+\vspace*{0.75in}
+{\raggedright
+
+{\color{color1}\Large\bfseries Employment History\par}
+\vspace{0.25in}
+{\color{color1}\rule{\textwidth}{1pt}}
+
+\vspace{0.6in}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Appointment Date at K-State:} & February 25, 2025 \\
+\textbf{Mid-Probation Review Date:} & December 2027 \\
+\textbf{Final Tenure Review Date:} & December 2030 \\
+\textbf{Annual Status Worksheet:} &
+\href{https://staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet}
+{staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet} \\
+\end{tabular}
+
+}
+\newpage
+
+% Include Achivements
+\input{achievements.tex}
+\newpage
+
+% Include Personal Goals
+\input{goals.tex}
+\newpage
+
+% Include Directed
+\input{directed.tex}
+\newpage
+
+% Include Non-Directed
+\input{nondirected.tex}
+\newpage
+
+% Include Research and Creative
+\input{researchandcreative.tex}
+\newpage
+
+% Position Descripton
+% recomendation form
+\includepdf[pages=-]{pd.pdf}
+
+% Evaluation
+% recomendation form
+\includepdf[pages=-]{evaluation.pdf}
+
+% Include CV
+\input{cv.tex}
+
+\end{document}
