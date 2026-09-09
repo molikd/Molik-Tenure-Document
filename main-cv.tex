@@ -31,10 +31,14 @@
 
 % Geometry
 \usepackage[scale=0.85]{geometry}
+\usepackage{xurl} % Allow long evidence URLs to wrap within the page.
 
 
 % BibLaTeX setup 
 \usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
+\setcounter{biburllcpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburlnumpenalty}{100}
 \ExecuteBibliographyOptions{doi=true, url=true, isbn=false}
 
 \setlength{\bibitemsep}{.25\baselineskip}
