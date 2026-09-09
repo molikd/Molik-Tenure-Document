@@ -81,8 +81,12 @@ for source in root_sources():
 
 # --- 5. Regression words: typos fixed in review must not return --------------
 wordlist = ROOT / "tests" / "regression-words.txt"
-words = [w for w in wordlist.read_text(encoding="utf-8").splitlines()
-         if w and not w.startswith("#")]
+words = []
+for raw in wordlist.read_text(encoding="utf-8").splitlines():
+    s = raw.strip()
+    if not s or s.startswith("#"):
+        continue
+    words.append(s)
 for source in root_sources():
     # .bib URLs/DOIs are identifiers, not prose; skip them here.
     if source.suffix == ".bib":
