@@ -1,0 +1,45 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Static LaTeX and bibliography checks
+        run: python3 tests/check_latex.py
+
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build tenure portfolio
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Build standalone CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main-cv.tex
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Audit logs for errors and warnings
+        run: |
+          hit=0
+          if grep -E '^!' main.log main-cv.log; then hit=1; fi
+          if grep -iE 'undefined (citation|reference)' main.log main-cv.log; then hit=1; fi
+          if grep -i 'WARN' main.blg main-cv.blg; then hit=1; fi
+          if [ "$hit" -ne 0 ]; then
+            echo "log audit failed" >&2
+            exit 1
+          fi
+          echo "log audit passed: no errors, undefined references, or biber warnings."
