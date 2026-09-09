@@ -108,6 +108,20 @@
 %\usepackage{multibbl}
 \newcommand\Colorhref[3][violet]{\href{#2}{\color{#1}#3}}
 
+% Repeatable per-document header (see main.tex); the standalone CV calls it
+% once via cv.tex, keeping both roots on the same header.
+\makeatletter
+\newcommand{\portfoliotitle}{%
+  {\raggedright
+   {\color{color1}\huge\bfseries \@firstname\ \@familyname\par}
+   \vspace{0.1in}
+   {\color{color1}\Large \@title\par}
+   \vspace{0.1in}
+   {\color{color1}\rule{\textwidth}{1pt}\par}
+   \vspace{0.25in}}%
+}
+\makeatother
+
 
 
 \begin{document}
