@@ -31,10 +31,14 @@
 
 % Geometry
 \usepackage[scale=0.85]{geometry}
+\usepackage{xurl} % Allow long evidence URLs to wrap within the page.
 
 
 % BibLaTeX setup 
 \usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
+\setcounter{biburllcpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburlnumpenalty}{100}
 \usepackage{pdfpages}
 \ExecuteBibliographyOptions{doi=true, url=true, isbn=false}
 
@@ -136,7 +140,7 @@
 {\raggedright
     \vspace*{1.25in}
 
-    {\color{color1}\LARGE\bfseries Tenure and Promotion Portfolio\par}
+    {\color{color1}\LARGE\bfseries 2026 Reappointment Portfolio -- Working Draft\par}
     \vspace{0.25in}
 
     {\color{color1}\rule{\textwidth}{1.5pt}}
@@ -152,7 +156,7 @@
 
     \vspace{0.75in}
 
-    {\normalsize Submitted for Consideration of Tenure\par}
+    {\normalsize Year 2 annual review; portfolio due October 16, 2026\par}
 
     \vfill
 
@@ -179,8 +183,8 @@
 
 \begin{tabular}{@{}ll@{}}
 \textbf{Appointment Date at K-State:} & February 25, 2025 \\
-\textbf{Mid-Probation Review Date:} & December 2027 \\
-\textbf{Final Tenure Review Date:} & December 2030 \\
+\textbf{Mid-Probation Review Date:} & December 2027 (pending HR confirmation) \\
+\textbf{Final Tenure Review Date:} & December 2030 (pending HR confirmation) \\
 \textbf{Annual Status Worksheet:} &
 \href{https://staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet}
 {staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet} \\
@@ -214,7 +218,10 @@
 \includepdf[pages=-]{pd.pdf}
 
 % Evaluation
-\includepdf[pages=-]{evaluation.pdf}
+\includepdf[pages=-]{evidence/2025/evaluation-signed.pdf}
+
+% Prior annual reappointment recommendation, supplied signed copy.
+\includepdf[pages=-]{evidence/2025/reappointment-letter-signed.pdf}
 
 % Include CV
 \input{cv.tex}
