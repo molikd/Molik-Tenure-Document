@@ -55,7 +55,7 @@ for bib in sorted(ROOT.glob("*.bib")):
         if month and not re.fullmatch(r"\d+", month.group(1).strip()):
             fail(f"{bib.name}: entry '{key}' month must be an integer, "
                  f"got '{month.group(1)}'")
-        if not re.search(r"(?:year|date)\s*=", body, re.I):
+        if not re.search(r"^\s*(?:year|date)\s*=", body, re.I | re.M):
             warn(f"{bib.name}: entry '{key}' has no year/date "
                  f"(biber warns; ydnt sorting placement suffers)")
 
