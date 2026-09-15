@@ -58,7 +58,8 @@
 
 
 \begin{document}
-% ModernCV loads hyperref at document start; set output metadata afterward.
+% ModernCV loads/configures hyperref in AtEndPreamble; set metadata here
+% after that hook so its defaults cannot overwrite these document-specific values.
 \hypersetup{pdfauthor={David Molik}, pdftitle={Curriculum Vitae}}
 
 % Include CV

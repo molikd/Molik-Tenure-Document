@@ -4,7 +4,7 @@ Tracking issue: https://github.com/molikd/Molik-Tenure-Document/issues/7
 
 ## Purpose
 
-Review and modernize the underlying LaTeX/template code so the portfolio and standalone CV remain maintainable, reproducible and easy to update. This is a technical maintenance workstream separate from the tenure-content/evidence work in #4 and PR #6.
+Review and modernize the underlying LaTeX/template code so the portfolio and standalone CV remain maintainable, reproducible and easy to update. The technical maintenance work is tracked here; this branch also carries earlier tenure-content/evidence changes from commit ca317ca, tracked in #4 and PR #6. Those inherited edits are part of the full PR diff.
 
 ## Review scope
 
@@ -24,7 +24,7 @@ Review and modernize the underlying LaTeX/template code so the portfolio and sta
 - Both documents build from a clean checkout using documented commands.
 - No new undefined references/citations, missing assets, duplicate bibliography keys or unexplained warnings.
 - Before/after visual review covers title pages, section headers, long URLs, bibliography pagination and embedded PDFs; intentional layout changes are documented.
-- Signed evidence PDFs remain byte-identical. Portfolio claims, statuses and policy interpretation remain unchanged; proposed word maximums are not made mandatory.
+- Signed evidence PDFs remain byte-identical. The technical follow-up preserves the inherited portfolio claims, statuses and policy interpretation; proposed word maximums are not made mandatory.
 - Meaningful checks cover changed failure modes, and remaining technical debt is recorded.
 
 Start with an inventory and prioritized review findings. Implement subsequent fixes in small, reviewable commits after the review scope is established.
@@ -49,3 +49,16 @@ test, macro argument/state documentation, ordering/filter/pagination rationale
 and stale first-party macro/social scaffolding cleanup are implemented. Four
 local tests pass including the opt-in integration test; both PDFs remain visually
 and textually identical. Hosted execution/artifact verification remains open.
+
+## Copilot review reconciliation
+
+The 55-page text/pixel comparison used commit 5029d13 as its baseline, not main.
+It validates the later infrastructure changes, not the earlier ca317ca content
+update. The inherited 2026 claims remain subject to the evidence register and
+content review in #4; this technical review does not certify all their sources.
+Copilot's scope findings are addressed by this explicit boundary, not by silently
+removing previously requested evidence. The Talks full-width layout is retained intentionally: restoring cvitem
+boxes the list and increased both outputs by one page (50/7 versus 49/6).
+The unboxed list permits natural page breaks; this difference from main is
+explicitly documented in cv.tex. Month semantics now remain with Biber; metadata comments describe
+AtEndPreamble accurately, and cleanup removes all generated driver artifacts.

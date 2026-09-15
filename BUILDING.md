@@ -12,8 +12,9 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex main
 # Static checks (no TeX installation needed):
 python3 tests/check_latex.py
 
-# Clean generated files (sources are never modified by a build):
-latexmk -C -outdir=build main.tex main-cv.tex
+# Remove the generated build directory, including driver logs and metadata:
+# Run from the repository root.
+rm -rf build/
 ```
 
 Both roots must build with no errors; `tests/check_latex.py` must pass with

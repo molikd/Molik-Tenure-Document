@@ -51,10 +51,8 @@ for bib in sorted(ROOT.glob("*.bib")):
             if lowered in seen:
                 fail(f"{bib.name}: entry '{key}' has duplicate field '{field}'")
             seen.add(lowered)
-        month = re.search(r"month\s*=\s*\{([^}]*)\}", body)
-        if month and not re.fullmatch(r"\d+", month.group(1).strip()):
-            fail(f"{bib.name}: entry '{key}' month must be an integer, "
-                 f"got '{month.group(1)}'")
+        # Month values can be numeric, textual or macro expressions. Let Biber
+        # parse their semantics; a digits-only regex rejects legitimate input.
         if not re.search(r"^\s*(?:year|date)\s*=", body, re.I | re.M):
             warn(f"{bib.name}: entry '{key}' has no year/date "
                  f"(biber warns; ydnt sorting placement suffers)")
