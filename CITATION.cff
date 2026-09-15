@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, please cite it using this metadata and identify
+  the commit used. Cite individual publications separately.
+title: "David Molik's Tenure Portfolio"
+authors:
+  - family-names: Molik
+    given-names: David
+    orcid: "https://orcid.org/0000-0003-3192-6538"
+repository-code: "https://github.com/molikd/Molik-Tenure-Document"
+url: "https://github.com/molikd/Molik-Tenure-Document"
+abstract: >-
+  LaTeX sources, build tooling and supporting documentation for David Molik's
+  Kansas State University reappointment and tenure portfolio and standalone CV.
+keywords:
+  - tenure portfolio
+  - curriculum vitae
+  - LaTeX

@@ -1,3 +1,5 @@
+% Shared CV body included by both roots; changes affect both generated documents.
+% Presentation helpers live in shared/preamble.tex; do not load packages here.
 
 
 %----------------------------------------------------------------------------------------
@@ -19,11 +21,8 @@
   \aiOrcid\href{https://orcid.org/0000-0003-3192-6538}{ 0000-0003-3192-6538}
 }
 
-%\social[linkedin][www.linkedin.com]{name}
-% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
 
 %\photo[70pt][0.3pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
-%\quote{Not Attention, Patience is all we need.}
 
 %----------------------------------------------------------------------------------------
 
@@ -31,20 +30,7 @@
 
 
 
-% \newcommand{\cvreference}[7]{%
-%     \textbf{#1}\newline% Name
-%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
-%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
-%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
-%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
-%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
-%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
-
-
-
-
-
-\portfoliotitle % Repeatable section header (see main.tex)
+\portfoliotitle % Repeatable section header (see shared/preamble.tex)
 
 
 %----------------------------------------------------------------------------------------
@@ -164,6 +150,8 @@ Provides strategic and operational leadership for the University Libraries’ sc
 
 \section{Publications}
 %\subsection{Corresponding Author Articles}
+% Keyword filters define achievement categories; do not replace with source-file
+% filters. Keep heading=none because cvitem supplies the visible category title.
 \cvitem{\textbf{Corresponding Author Articles}}{\printbibliography[keyword={corresponding},heading=none]}
 %\subsection{Journal Articles}
 \cvitem{\textbf{Collaborative Articles}}{\printbibliography[keyword={journal},heading=none]}
@@ -177,7 +165,9 @@ Provides strategic and operational leadership for the University Libraries’ sc
 %----------------------------------------------------------------------------------------
 
 \section{Talks}
-\cvitem{}{\printbibliography[keyword={talks},heading=none]}
+% Intentionally full-width: classic cvitem boxes the whole bibliography and
+% prevents page breaks. The Talks list must flow across pages as it grows.
+\printbibliography[keyword={talks},heading=none]
 
 
 %----------------------------------------------------------------------------------------
