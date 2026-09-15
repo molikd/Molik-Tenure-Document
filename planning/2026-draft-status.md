@@ -71,3 +71,10 @@ pages all contained substantial text). The pagination change addresses the
 large gaps caused by whole bibliography groups in unbreakable cvitem boxes.
 The scanned position-description pages in the portfolio contain image content
 and are not blank pages to delete. Signed records remain unchanged.
+
+## PR #10 precision review
+
+- [x] Recheck FFAR original: Application_2249716.pdf p. 2 establishes April 29 full submission; p. 1 is the nomination workflow. Keep submission wording, correct stale register row 46, and retain award uncertainty.
+- [x] Replace dangling “respectively” with explicit proposal/amount pairs.
+- [x] Align LFPS summary with the June 23 confirmation and the unresolved policy effective date.
+- [x] Update Wiley row 35 from inquiry to August 14 launch while retaining the May origin and future collection outcomes.
