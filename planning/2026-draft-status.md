@@ -86,3 +86,10 @@ and are not blank pages to delete. Signed records remain unchanged.
 - [ ] Retain independently dated June authorship/circulation history and later approval/implementation evidence if needed.
 
 See [source observations and limits](2026-staffnet-ticket-evidence.md).
+
+## Issue #14 editorial revision
+
+The plain-language pass retains the June landscape, named activities, date-first
+entries and inline evidence, with shorter prior-year context and emphasis on 2026.
+See [editorial review and remaining work](2026-editorial-review.md). Full labeled
+supplementary documents and the candidate/colleague final review remain in #4.
