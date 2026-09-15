@@ -1,3 +1,8 @@
+Candidate correction: David helped refine and coordinate the student roles; he
+did not create the positions. Earlier workbook wording about developing roles
+must be read in that collaborative sense. The manuscript uses applied information
+science as its strategic framing and retains a concise 2025 foundation.
+
 # Current reconciliation notice — September 15, 2026
 
 The workbook inventory below is historical source reporting, not the current

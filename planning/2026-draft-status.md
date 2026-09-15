@@ -8,9 +8,9 @@ The compiled evidence index makes that provenance explicit.
 
 ## Implemented
 
-- [x] Replace the 2025-centered working updates with coherent 2026 accomplishments, directed service, non-directed service and RSCAD narratives.
+- [x] Revise the prior portfolio into cumulative 2025--2026 accomplishments, directed service, non-directed service and RSCAD narratives.
 - [x] Add linked evidence IDs beside claims and a compiled source index with original-artifact links where available.
-- [x] Explain OPE supervision through role design, mentor assignment, HR posting, onboarding and delegation; retain the distinction between posting, onboarding and outcomes.
+- [x] Explain OPE supervision through collaborative role refinement, mentor assignment, HR posting, onboarding and delegation; retain the distinction between posting, onboarding and outcomes.
 - [x] Add William T. Grant mentoring with acknowledged revision uptake, Sunderland operating-model delivery, Carol consultation/ORCID uptake and IUSE concept/team formation.
 - [x] Add LFPS governance with adopted recommendations, SLC role evidence, Wiley editorial service and AgBioData sustainability appointment.
 - [x] Correct Ag-DEx to June 26, $923,325, PI/project director with Gwen Sibley co-PD/co-PI; retain not-funded status.
@@ -28,7 +28,7 @@ The compiled evidence index makes that provenance explicit.
 | Evidence beside claims | Linked L/D/K/G/R/S/N identifiers and `evidence-2026.tex` |
 | Individual contribution and quality | Mentoring uptake, governance revisions, delivered operating model and attributed stakeholder feedback |
 | Disciplinary research connected to Libraries | Provenance, standards, reproducible software and research-service design |
-| Delegation and supervisory clarity | Named-mentor role model, HR coordination and onboarding examples |
+| Delegation and supervisory clarity | Contribution to the named-mentor role model, HR coordination and onboarding examples |
 | Five-year goals and continued learning | Proposed 2027–2031 goals with first-year milestones; supervisor agreement still needed |
 
 ## Open before final submission
@@ -53,7 +53,21 @@ assembly and deliberately does not claim the unresolved items are complete.
 
 Both roots compile with the established font/layout warnings visible. Source
 evidence IDs resolve to index anchors, and tracked input PDFs remain byte-identical.
-Narrative/front-matter and CV renderings were inspected. Approximate narrative
-lengths are 515 words for accomplishments and 339 for goals; the guidance remains
-provisional. The rendered portfolio is a working draft with explicit missing-form
+Narrative/front-matter and CV renderings were inspected. Narrative length guidance remains provisional; the earlier 515/339-word counts
+refer to the first draft, before cumulative-context revisions. The rendered portfolio is a working draft with explicit missing-form
 placeholders, not a submission-ready document.
+
+## Candidate revisions: cumulative narrative and readability
+
+- [x] Overall strategy is integrating computational science / applied information science; genomics remains an application area, not the main strategic activity.
+- [x] Restore a concise 2025 foundation in accomplishments, directed service, non-directed service and research, with 2026 follow-through given greater weight.
+- [x] Date activity paragraphs up front and arrange dated developments from earlier to later within each section. Use the earliest retained milestone where the actual project start is unknown; do not fabricate precision.
+- [x] Correct student-role attribution: helped refine descriptions/mentoring arrangements and coordinate approval, posting and onboarding; did not create the positions.
+- [x] Add local first-line indentation and paragraph spacing to narratives, including first paragraphs after headings.
+- [x] Update 2026 CV date labels and proposal/software ordering; replace boxed publication groups with breakable lists to avoid large pagination gaps.
+
+No entirely empty page was reproduced in the incoming standalone CV (seven
+pages all contained substantial text). The pagination change addresses the
+large gaps caused by whole bibliography groups in unbreakable cvitem boxes.
+The scanned position-description pages in the portfolio contain image content
+and are not blank pages to delete. Signed records remain unchanged.

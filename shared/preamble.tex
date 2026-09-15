@@ -14,8 +14,14 @@
 % Adjust scale here for both roots; root-specific changes belong in the root.
 % Geometry
 \usepackage[scale=0.85]{geometry}
+\usepackage{indentfirst} % Narrative paragraphs also indent after headings.
 \usepackage{xurl} % Allow long evidence URLs to wrap within the page.
 
+
+% The classic headings span the text width. Keep them flush left when narrative
+% prose uses a nonzero indent; otherwise the added indent creates an overfull box.
+\patchcmd{\section}{\parbox[t]}{\noindent\parbox[t]}{}{\PackageError{portfolio}{Section indent patch failed}{Check the vendored classic style.}}
+\patchcmd{\subsection}{\begin{tabular}}{\noindent\begin{tabular}}{}{\PackageError{portfolio}{Subsection indent patch failed}{Check the vendored classic style.}}
 
 % Biber resolves metadata; ydnt sorts year descending, then name/title.
 % Keep keyword filters in cv.tex synchronized with .bib keywords, not filenames.
