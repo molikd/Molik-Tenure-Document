@@ -1,3 +1,20 @@
+Candidate correction: David helped refine and coordinate the student roles; he
+did not create the positions. Earlier workbook wording about developing roles
+must be read in that collaborative sense. The manuscript uses applied information
+science as its strategic framing and retains a concise 2025 foundation.
+
+# Current reconciliation notice — September 15, 2026
+
+The workbook inventory below is historical source reporting, not the current
+status of every item. The manuscript now follows the later issue #4 evidence
+reviews and [draft status](2026-draft-status.md). In particular: Ag-DEx was
+submitted June 26 for $923,325 with a co-PD; FFAR full submission is established;
+FAIROS was withdrawn June 8; ID3A has a $13,417 award commitment; ATE is deferred
+to the next year; KPI implementation is documented but full-refresh/use outcomes
+remain open. The compiled `evidence-2026.tex` index maps current claim groups to
+source reviews and retained artifact links. Do not reuse superseded workbook
+wording as a verified current status.
+
 # 2026 evidence register
 
 Working inventory as of September 9, 2026. Source: Tenure Achievements 2026 - Guideline Classified.xlsx, Sheet1. Entries are source-reported, not independent verification. Categories are provisional; original confirmations and individual contributions remain necessary. Proposed amounts are not awards, calendar entries are not attendance, and prototypes are not deployment.
@@ -37,7 +54,7 @@ Working inventory as of September 9, 2026. Source: Tenure Achievements 2026 - Gu
 | 32 | Designed Applied Learning Experience pathway for OPE students beginning Spring 2027 eligibility | 2026-08-14 00:00:00 | Directed Service | Integrated mentoring, reflection, goal-setting, supervision, and transcript-recognized applied learning. |
 | 33 | Developed concept for 1-credit online course in Scholarly Communication Research Fundamentals | August 2026 | RSCAD | Course concept combines open science, knowledge graphs, scholarly communication, and research methods. |
 | 34 | Developed concept for 1-credit Knowledge Graphs: Foundations and Applications course | August 2026 | RSCAD | Standalone instructional concept supporting later research-methods curriculum. |
-| 35 | Advanced proposed Wiley special collection on Cyberinfrastructure and Data Management in Ecology and Evolution | 2026-05-06 00:00:00 | Non-Directed Service | Originated the inquiry, assembled an interdisciplinary editorial concept, recruited a prospective co-chair, and agreed to develop a draft Call for Papers. / Documented: special collection inquiry advanced with Wiley; proposal form supplied; draft Call for Papers requested. / Ecology and Evolution; APC $2,700; ≥10 accepted papers could support up to 3 waivers |
+| 35 | Developed and became guest editor for Cyberinfrastructure and Data Management in Ecology and Evolution (Wiley) | May 6, 2026 inquiry; August 14, 2026 launch | Non-Directed Service | Initial inquiry and editorial development progressed to a launched special collection. August 14 launch correspondence and the [public call](https://onlinelibrary.wiley.com/page/journal/20457758/call-for-papers/si-2026-000962) establish the guest-editor role; submission deadline August 31, 2027. No completed issue or published collection articles claimed. Supersedes inquiry-only status; see issue #4 comments 5682646028 and 5683209268. |
 | 36 | Served as Co-Editor-in-Chief of Cyberbiosecurity Quarterly | 2026 | Non-Directed Service | New Prairie Press + BIO-ISAC scholarly publishing leadership. |
 | 37 | Continued elected service on AgBioData Steering Committee | 2026 | Non-Directed Service | National/international biological data-community governance. |
 | 38 | Chaired i5k Training Working Group | 2026 | Non-Directed Service | Led training planning and recruited additional working-group participation. |
@@ -48,7 +65,7 @@ Working inventory as of September 9, 2026. Source: Tenure Achievements 2026 - Gu
 | 43 | Developed Pressbooks-Canvas integration assessment and renewal analysis | August 2026 | Directed Service | Evaluated current integration, hosting, and institutional use for OER delivery. |
 | 44 | Produced scholarly communication leadership analysis on open publishing infrastructure, agreements, repositories, PIDs, and data publishing | 2026 | Directed Service | Ongoing strategic analysis supporting OPE and K-State Libraries decision-making. |
 | 45 | Contributed as a named PI/co-PI to successful submission of the NSF annual project report for award 2126334 | 2026-08-26 00:00:00 | RSCAD | Annual report successfully submitted for the Sept. 1, 2025–Aug. 31, 2026 reporting period. / Documented from Outlook submission confirmation. / NSF award 2126334 |
-| 46 | Finalized and obtained institutional clearance for an FFAR New Innovators Award application | 2026-04-29 00:00:00 | RSCAD | Extensive application revision, budget approval, final AOR review, and authorization to submit. Final sponsor submission confirmation still needs to be recovered. / Strong documentary evidence of final institutional clearance; formal submission confirmation not yet located. / FFAR New Innovators Award; proposed Jan. 1, 2027–Dec. 31, 2029; 15% IDC; $83,015 match removed in review |
+| 46 | Submitted FFAR New Innovators full application: Unlocking Agricultural Research Data for Better Farming Decisions | April 29, 2026 | RSCAD | Application_2249716.pdf, file page 2, explicitly records “Submitted on Apr 29, 2026” for the full application. Page 1 separately shows the March 9 nomination workflow with “In progress”; it does not supersede the full-application status. Requested $449,912.20, no match, proposed January 1, 2027–December 31, 2029. Award not established. Supersedes the earlier clearance-only entry; original PDF rechecked during PR #10 review, consistent with issue #4 comment 5682646028. |
 | 47 | Co-authored "The Future is FAIR: A Community Framework for Enhanced Data Management and Data Sharing," which received a minor-revision decision from DATABASE | 2026-06-26 00:00:00 | RSCAD | Manuscript recommended for publication subject to minor revisions; co-authors asked to verify names, affiliations, ORCIDs, and responses. / Documented minor-revision decision; final acceptance/publication should be added when available. / DATABASE-2026-0036 |
 | 48 | Executed the non-federal author publication license needed to advance the i5k standards paper toward publication | 2026-07-14 00:00:00 | RSCAD | Signed on behalf of the non-federal authors and clarified K-State author copyright retention. / Documented licensing milestone; final publication citation/DOI still needed. / Oxford University Press / i5k standards paper |
 | 49 | Managed external peer review for PCI Genomics manuscript "ViroSeek: a viral detection pipeline for second-generation sequencing" as inviting editor/recommender | 2026-03-10 00:00:00 | Research / Service | https://doi.org/10.64898/2026.03.04.706323 / Invited specialist reviewer and held responsibility for recommendation text if accepted. / Documented editorial handling. / PCI Genomics #695; DOI 10.64898/2026.03.04.706323 |

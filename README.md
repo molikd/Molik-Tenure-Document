@@ -19,6 +19,10 @@ CI behavior, integration tests and accessibility limitations.
 
 ## Documentation
 
+- [2026 manuscript status](planning/2026-draft-status.md): implemented narrative and remaining submission requirements.
+- `evidence-2026.tex`: compiled source index linked from the narrative.
+
+
 - [2026 evidence register](planning/2026-evidence-register.md): supporting sources and evidence tracking.
 - [2026 review checklist](planning/2026-review-checklist.md): portfolio review and content updates.
 - [Template inventory](planning/latex-template-inventory.md): source structure and dependency decisions.
