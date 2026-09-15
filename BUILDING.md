@@ -59,3 +59,12 @@ and hyperlinks but is **not a certified tagged PDF/PDF-UA document**. Embedded
 signed PDFs retain their original accessibility limitations. A future tagged-PDF
 migration needs dedicated reading-order and assistive-technology review. Keep
 signed evidence byte-identical, and compare page renderings after macro changes.
+
+## Diagnostic acceptance test
+
+Run `RUN_LATEX_INTEGRATION=1 python3 -m unittest discover -s tests -p 'test_*.py'`
+with TeX installed. The fourth test copies the repository into a temporary
+directory, injects an undefined control sequence, and verifies nonzero status,
+source-error visibility and retained native/summary logs without altering sources.
+Normal output labels dependency checks, actual latexmk rule passes, log audits
+and successful outputs; verbose output additionally streams full native messages.

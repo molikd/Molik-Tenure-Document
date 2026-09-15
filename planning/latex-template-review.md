@@ -43,3 +43,9 @@ classification, missing artifacts and command failure propagation.
 
 Deferred: ModernCV migration/tagged PDF accessibility, existing font/layout warnings
 and the known dateless software bibliography entry. These do not change tenure content.
+
+Additional-scope follow-up: explicit build stages, real LaTeX-failure acceptance
+test, macro argument/state documentation, ordering/filter/pagination rationale
+and stale first-party macro/social scaffolding cleanup are implemented. Four
+local tests pass including the opt-in integration test; both PDFs remain visually
+and textually identical. Hosted execution/artifact verification remains open.

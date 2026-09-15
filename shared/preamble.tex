@@ -10,11 +10,15 @@
 \moderncvstyle{classic}
 \moderncvcolor{\KPIModerncvColor}
 
+% Geometry precedes xurl so wrapping follows the final text width.
+% Adjust scale here for both roots; root-specific changes belong in the root.
 % Geometry
 \usepackage[scale=0.85]{geometry}
 \usepackage{xurl} % Allow long evidence URLs to wrap within the page.
 
 
+% Biber resolves metadata; ydnt sorts year descending, then name/title.
+% Keep keyword filters in cv.tex synchronized with .bib keywords, not filenames.
 % BibLaTeX setup
 \usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
 \setcounter{biburllcpenalty}{100}
@@ -42,13 +46,19 @@
 \usepackage{marvosym}
 \usepackage{academicons}
 
-% Violet hyperlinks used across cv.tex.
+% \Colorhref[optional color]{destination URL}{display text}: inline link.
+% Default violet is independent of the root theme. Requires ModernCV hyperref;
+% use in document content, with LaTeX-escaped display text. No global color change.
 \newcommand\Colorhref[3][violet]{\href{#2}{\color{#1}#3}}
 
 % Per-section header. moderncv's \makecvtitle allocates its layout lengths
 % with \newcommand, so it can only be called once per document; the portfolio
 % calls a header in every section, hence this repeatable replacement (name +
 % section title + rule, matching the cover styling).
+% \portfoliotitle takes no arguments: set \firstname, \familyname and \title
+% before calling in document content. Reads ModernCV internal identity fields;
+% emits paragraphs/vertical space but does not start a page or reset identity.
+% Root/section callers own page breaks; do not call inside an inline box.
 \makeatletter
 \newcommand{\portfoliotitle}{%
   {\raggedright

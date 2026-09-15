@@ -44,6 +44,10 @@ def run(command, log, verbose):
                               stderr=subprocess.STDOUT, text=True, errors='replace') as process:
             for line in process.stdout:
                 output.write(line)
+                # latexmk schedules actual engine/biber passes; surface its rule
+                # transitions without guessing a pass count or duplicating output.
+                if not verbose and line.startswith("Run number "):
+                    print('Stage:', line.strip(), flush=True)
                 if verbose:
                     print(line, end='')
             code = process.wait()
@@ -61,12 +65,16 @@ def main():
     args = parser.parse_args()
     directory = ROOT / 'build'
     directory.mkdir(exist_ok=True)
+    print('Stage: dependency checks', flush=True)
     versions = [sys.version.splitlines()[0]]
     for tool in ('latexmk', 'pdflatex', 'biber'):
         if not shutil.which(tool):
             print(f'Missing dependency: {tool}; see BUILDING.md', file=sys.stderr)
             return 2
         result = subprocess.run([tool, '--version'], capture_output=True, text=True)
+        if result.returncode:
+            print(f'Dependency check failed: {tool}: {result.stderr}', file=sys.stderr)
+            return 2
         versions.append(tool + ': ' + (result.stdout or result.stderr).strip())
     (directory / 'tool-versions.txt').write_text('\n'.join(versions) + '\n')
     if run([sys.executable, 'tests/check_latex.py'], directory / 'static.log', args.verbose):
@@ -76,13 +84,14 @@ def main():
         code = run(['latexmk', '-pdf', '-file-line-error', '-interaction=nonstopmode',
                     '-halt-on-error', '-outdir=build', stem + '.tex'],
                    directory / f'{stem}-build.log', args.verbose)
+        print(f'Stage: log audit for {stem}', flush=True)
         errors, warnings = audit(directory, stem)
         (directory / f'{stem}-diagnostics.txt').write_text('\n'.join(errors + warnings) + '\n')
         for message in errors + warnings:
             print(message)
         failed |= bool(code or errors)
         if not code and not errors:
-            print(f'Output: {directory / (stem + ".pdf")}; warnings: {len(warnings)}')
+            print(f'Stage: output ready — {directory / (stem + ".pdf")}; warnings: {len(warnings)}')
     return int(failed)
 
 
