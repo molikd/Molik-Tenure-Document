@@ -78,3 +78,11 @@ and are not blank pages to delete. Signed records remain unchanged.
 - [x] Replace dangling “respectively” with explicit proposal/amount pairs.
 - [x] Align LFPS summary with the June 23 confirmation and the unresolved policy effective date.
 - [x] Update Wiley row 35 from inquiry to August 14 launch while retaining the May origin and future collection outcomes.
+
+## Post-PR #10 evidence supplement
+
+- [x] Add the June 2026 OPE landscape writing contribution to Directed Service and accomplishments, with source anchor L5.
+- [x] Retain the supplied landscape PDF unchanged and document StaffNet Department Overviews placement.
+- [ ] Retain independently dated June authorship/circulation history and later approval/implementation evidence if needed.
+
+See [source observations and limits](2026-staffnet-ticket-evidence.md).
