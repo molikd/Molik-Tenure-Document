@@ -1,3 +1,11 @@
+# Manuscript assembly status — September 15, 2026
+
+The first 2026 manuscript draft now implements narrative/CV/goals updates and
+inline source references. See [current draft checklist](2026-draft-status.md) for
+completed items and remaining submission requirements. The original checklist
+below is retained as review context; its older unverified leads are superseded
+by issue #4's later evidence reconciliations.
+
 # 2026 review and evidence checklist
 
 The supplied 2026–2027 master calendar places Molik in Year 2 (G3). Evaluation and portfolio are due October 16, 2026; committee review is October 19–November 2 and deliberations November 2–3. Confirm the individual appearance time and official Annual Status Review Worksheet. Existing December 2027/2030 dates remain unverified.

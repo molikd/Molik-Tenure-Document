@@ -34,7 +34,7 @@
 
 % Root-specific identity block; section content sets its own \title.
 % Personal Data (required: moderncv references \@firstname/\@familyname
-% at \begin{document}, so these must stay defined even though each
+% at document start, so these must stay defined even though each
 % \input section sets its own \title before \portfoliotitle)
 \firstname{David}
 \familyname{Molik}
@@ -54,6 +54,8 @@
 
 %----------------------------------------------------------------------------------------
 
+% Stable narrative links to the compiled evidence index.
+\newcommand{\evidenceref}[1]{\,\hyperlink{evidence-#1}{[#1]}}
 \begin{document}
 % ModernCV loads/configures hyperref in AtEndPreamble; set metadata here
 % after that hook so its defaults cannot overwrite these document-specific values.
@@ -76,6 +78,7 @@
 
     {\normalsize Associate Professor\par}
     {\normalsize Department Head, Open Publishing Exchange\par}
+    {\normalsize Lead Research Officer\par}
     {\normalsize Kansas State University Libraries\par}
 
     \vspace{0.75in}
@@ -84,12 +87,21 @@
 
     \vfill
 
-    {\normalsize \today\par}
+    {\normalsize Evidence cutoff: September 15, 2026\par}
+    {\normalsize Compiled \today\par}
 }
 \newpage
 
-% recommendation form
-\includepdf[pages=-]{recommendation.pdf}
+% recommendation.pdf is a Year 1 / January 2025 form; preserve it in the repo,
+% but do not present it as the current annual-review form.
+\section*{Current-Year Recommendation Form --- Pending}
+The existing repository form is labeled Year 1 / January 2025. The applicable
+2026 form and authorized completion are still required. This page is a draft
+assembly placeholder, not an official recommendation, vote or signature.
+\par\medskip
+The official Annual Status Review Worksheet and current-year workload/evaluation
+records also remain to be supplied before submission. The following employment
+summary is informational and does not replace the HR worksheet.
 
 
 % --- Employment History ---
@@ -109,11 +121,11 @@
 
 \begin{tabular}{@{}ll@{}}
 \textbf{Appointment Date at K-State:} & February 25, 2025 \\
-\textbf{Mid-Probation Review Date:} & December 2027 (pending HR confirmation) \\
-\textbf{Final Tenure Review Date:} & December 2030 (pending HR confirmation) \\
+\textbf{Mid-Probation Review Date:} & Pending official HR worksheet \\
+\textbf{Final Tenure Review Date:} & Pending official HR worksheet \\
 \textbf{Annual Status Worksheet:} &
-\href{https://staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet}
-{staffnet.lib.k-state.edu/display/HR/Annual+Status+Worksheet} \\
+\href{https://staffnet.atlassian.net/wiki/spaces/HR/pages/180256990/Annual+Status+Worksheet}
+{Official worksheet location (record still required)} \\
 \end{tabular}
 
 }
@@ -138,6 +150,10 @@
 % Include Research and Creative
 \input{researchandcreative.tex}
 \newpage
+
+% Source index is supporting documentation; final submission placement awaits review.
+\input{evidence-2026.tex}
+\clearpage
 
 % Position Description
 % recommendation form

@@ -1,3 +1,15 @@
+# Current reconciliation notice — September 15, 2026
+
+The workbook inventory below is historical source reporting, not the current
+status of every item. The manuscript now follows the later issue #4 evidence
+reviews and [draft status](2026-draft-status.md). In particular: Ag-DEx was
+submitted June 26 for $923,325 with a co-PD; FFAR full submission is established;
+FAIROS was withdrawn June 8; ID3A has a $13,417 award commitment; ATE is deferred
+to the next year; KPI implementation is documented but full-refresh/use outcomes
+remain open. The compiled `evidence-2026.tex` index maps current claim groups to
+source reviews and retained artifact links. Do not reuse superseded workbook
+wording as a verified current status.
+
 # 2026 evidence register
 
 Working inventory as of September 9, 2026. Source: Tenure Achievements 2026 - Guideline Classified.xlsx, Sheet1. Entries are source-reported, not independent verification. Categories are provisional; original confirmations and individual contributions remain necessary. Proposed amounts are not awards, calendar entries are not attendance, and prototypes are not deployment.
