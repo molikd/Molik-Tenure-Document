@@ -1,0 +1,3 @@
+# Reproducible builds belong outside the source tree and are regenerated locally.
+/build/
+__pycache__/

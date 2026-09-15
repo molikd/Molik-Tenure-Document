@@ -14,32 +14,39 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Static LaTeX and bibliography checks
-        run: python3 tests/check_latex.py
+          python-version: '3.12'
+      - name: Static source and diagnostic regression checks
+        run: |
+          python3 tests/check_latex.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
 
   compile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build tenure portfolio
+      # Use the same driver locally and in CI; each root keeps separate logs.
+      - name: Build and audit both document roots
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: main.tex
-          args: -pdf -interaction=nonstopmode -halt-on-error
-      - name: Build standalone CV
-        uses: xu-cheng/latex-action@v3
+          texlive_version: '2024'
+          root_file: |
+            main.tex
+            main-cv.tex
+          continue_on_error: true
+          extra_system_packages: python3
+          compiler: python3
+          args: scripts/build.py
+      # Diagnostics must survive failed compilation. PDFs remain local until
+      # explicitly shared; this artifact contains build logs, not evidence PDFs.
+      - name: Retain build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          root_file: main-cv.tex
-          args: -pdf -interaction=nonstopmode -halt-on-error
-      - name: Audit logs for errors and warnings
-        run: |
-          hit=0
-          if grep -E '^!' main.log main-cv.log; then hit=1; fi
-          if grep -iE 'undefined (citation|reference)' main.log main-cv.log; then hit=1; fi
-          if grep -i 'WARN' main.blg main-cv.blg; then hit=1; fi
-          if [ "$hit" -ne 0 ]; then
-            echo "log audit failed" >&2
-            exit 1
-          fi
-          echo "log audit passed: no errors, undefined references, or biber warnings."
+          name: latex-diagnostics
+          path: |
+            build/*.log
+            build/*.blg
+            build/*-diagnostics.txt
+            build/tool-versions.txt
+          if-no-files-found: warn
+          retention-days: 14

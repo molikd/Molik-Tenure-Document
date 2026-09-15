@@ -5,6 +5,8 @@ Plan: `planning/latex-template-review.md`. Baseline: both roots build clean
 (`latexmk -pdf main.tex main-cv.tex`), static checks pass with one known
 warning (dateless `software.bib` entry).
 
+The findings below describe the original inventory; completion is recorded at the end.
+
 ## Entry points and inputs
 
 - `main.tex` — portfolio: cover page, `recommendation.pdf`, employment
@@ -81,3 +83,17 @@ warning (dateless `software.bib` entry).
 - ModernCV v2 migration (post-tenure).
 - `picture.jpg` removal if the photo option is definitively unwanted.
 - Merging `evaluation.tex` prose anywhere (content workstream, not template).
+
+## PR #8 reconciliation
+
+Items 1–4 and 6–7 are implemented: dead definitions/files removed, common
+preamble extracted and checked. Items 5 and 8–11 are intentional retention
+decisions. Item 12 is superseded by the logged Python build driver and CI artifact
+uploads; both roots now set author and distinct titles after ModernCV initializes
+hyperref. Source headers document section ownership and presentation boundaries.
+
+Existing font substitutions and over/underfull boxes remain baseline warnings.
+Before/after comparison found identical rendered pixels and extracted text on
+all 55 pages. BUILDING.md records navigation/accessibility limitations.
+CI uses the action's supported frozen TeX Live 2024 image; local builds use 2026.
+Hosted validation of that environment remains blocked by GitHub account billing.
