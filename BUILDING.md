@@ -19,8 +19,21 @@ rm -rf build/
 
 Both roots must build with no errors; `tests/check_latex.py` must pass with
 no failures (one known warning: the dateless `software.bib` entry).
-Overleaf: import the whole repository; both roots compile there unchanged
-because all inputs, including `shared/`, are relative paths.
+## Overleaf
+
+Import the whole repository, including `shared/` and the vendored ModernCV files.
+Select **pdfLaTeX** and set the main document to `main.tex` (portfolio) or
+`main-cv.tex` (CV), not `shared/preamble.tex` or an individual narrative section.
+The inputs use relative paths. Local and CI builds do not replace an Overleaf
+smoke test with the selected project's TeX Live version.
+
+Each root loads `shared/preamble` and then selects its literal theme with
+`\moderncvcolor{purple}` or `\moderncvcolor{black}`. If an older Overleaf copy
+reports an undefined `\KPIModerncvColor` followed by missing `moderncvcolor.sty`,
+sync both roots and `shared/preamble.tex` together and recompile from scratch.
+The missing unsuffixed filename is a consequence of the undefined color command;
+do not create an empty `moderncvcolor.sty` to hide it. The real theme files are
+`moderncvcolorpurple.sty` and `moderncvcolorblack.sty`, both included here.
 
 ## Logged build and troubleshooting
 

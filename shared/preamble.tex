@@ -1,14 +1,14 @@
 % Shared LaTeX preamble for the tenure portfolio (main.tex) and the
-% standalone CV (main-cv.tex). Each root sets \KPIModerncvColor first, then
-% \input{shared/preamble}, then adds only root-specific extras (extra bib
+% standalone CV (main-cv.tex). Each root calls \input{shared/preamble}, then
+% selects a literal \moderncvcolor and adds root-specific extras (extra bib
 % resources, spacing, personal data). Do not input this file twice in one
 % document; it issues \documentclass itself.
 
 \documentclass[11pt,letterpaper,sans]{moderncv}
 
-% ModernCV theme; the accent color comes from the root via \KPIModerncvColor.
+% Load the style here; each root selects its color after this file returns.
+% A literal color avoids an undefined suffix producing moderncvcolor.sty.
 \moderncvstyle{classic}
-\moderncvcolor{\KPIModerncvColor}
 
 % Geometry precedes xurl so wrapping follows the final text width.
 % Adjust scale here for both roots; root-specific changes belong in the root.
