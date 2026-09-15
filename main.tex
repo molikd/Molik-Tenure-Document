@@ -22,52 +22,17 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-% ModernCV with BibLaTeX-based Multi-section Publications
-\documentclass[11pt,letterpaper,sans]{moderncv}
+% ModernCV with BibLaTeX-based Multi-section Publications.
+% Shared preamble holds the common core; this root adds only its extras.
+\newcommand{\KPIModerncvColor}{purple}
+\input{shared/preamble}
 
-% ModernCV theme
-\moderncvstyle{classic}
-\moderncvcolor{purple}
-
-% Geometry
-\usepackage[scale=0.85]{geometry}
-\usepackage{xurl} % Allow long evidence URLs to wrap within the page.
-
-
-% BibLaTeX setup 
-\usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
-\setcounter{biburllcpenalty}{100}
-\setcounter{biburlucpenalty}{100}
-\setcounter{biburlnumpenalty}{100}
 \usepackage{pdfpages}
-\ExecuteBibliographyOptions{doi=true, url=true, isbn=false}
 
-\addbibresource{journal.bib}
-\addbibresource{conference.bib}
-\addbibresource{corresponding.bib}
-\addbibresource{whitepapers.bib}
-\addbibresource{talks.bib}
-\addbibresource{gradthesis.bib}
-\addbibresource{ugradthesis.bib}
 \addbibresource{software.bib}
 \addbibresource{internal.bib}
 
-% Load all entries from all .bib files (filtering is by bib keywords=).
-\AtBeginDocument{%
-  \nocite{*}
-}
-
-% Font & links
-\usepackage{fontawesome5}
-\usepackage{marvosym} 
-\usepackage{academicons}
-%\usepackage[colorlinks]{hyperref}
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-
+% Root-specific identity block; section content sets its own \title.
 % Personal Data (required: moderncv references \@firstname/\@familyname
 % at \begin{document}, so these must stay defined even though each
 % \input section sets its own \title before \portfoliotitle)
@@ -91,26 +56,6 @@
 %\quote{Not Attention, Patience is all we need.}
 
 %----------------------------------------------------------------------------------------
-
-
-%\usepackage{multibbl}
-\newcommand\Colorhref[3][violet]{\href{#2}{\color{#1}#3}}
-
-% Per-section header. moderncv's \makecvtitle allocates its layout lengths
-% with \newcommand, so it can only be called once per document; the
-% portfolio calls a header in every section, hence this repeatable
-% replacement (name + section title + rule, matching the cover styling).
-\makeatletter
-\newcommand{\portfoliotitle}{%
-  {\raggedright
-   {\color{color1}\huge\bfseries \@firstname\ \@familyname\par}
-   \vspace{0.1in}
-   {\color{color1}\Large \@title\par}
-   \vspace{0.1in}
-   {\color{color1}\rule{\textwidth}{1pt}\par}
-   \vspace{0.25in}}%
-}
-\makeatother
 
 \begin{document}
 

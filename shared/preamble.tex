@@ -1,0 +1,62 @@
+% Shared LaTeX preamble for the tenure portfolio (main.tex) and the
+% standalone CV (main-cv.tex). Each root sets \KPIModerncvColor first, then
+% \input{shared/preamble}, then adds only root-specific extras (extra bib
+% resources, spacing, personal data). Do not input this file twice in one
+% document; it issues \documentclass itself.
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+% ModernCV theme; the accent color comes from the root via \KPIModerncvColor.
+\moderncvstyle{classic}
+\moderncvcolor{\KPIModerncvColor}
+
+% Geometry
+\usepackage[scale=0.85]{geometry}
+\usepackage{xurl} % Allow long evidence URLs to wrap within the page.
+
+
+% BibLaTeX setup
+\usepackage[backend=biber,style=ext-verbose,sorting=ydnt]{biblatex}
+\setcounter{biburllcpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburlnumpenalty}{100}
+\ExecuteBibliographyOptions{doi=true, url=true, isbn=false}
+
+\addbibresource{journal.bib}
+\addbibresource{conference.bib}
+\addbibresource{corresponding.bib}
+\addbibresource{whitepapers.bib}
+\addbibresource{talks.bib}
+\addbibresource{gradthesis.bib}
+\addbibresource{ugradthesis.bib}
+
+% Load all entries from all .bib files (filtering is by bib keywords=).
+\AtBeginDocument{%
+  \nocite{*}
+}
+
+% Font & links
+\usepackage{fontawesome5}
+% marvosym is load-bearing: moderncv renders its contact icons (\mobilesymbol
+% etc.) through the mvs font family, which exists only with this package.
+\usepackage{marvosym}
+\usepackage{academicons}
+
+% Violet hyperlinks used across cv.tex.
+\newcommand\Colorhref[3][violet]{\href{#2}{\color{#1}#3}}
+
+% Per-section header. moderncv's \makecvtitle allocates its layout lengths
+% with \newcommand, so it can only be called once per document; the portfolio
+% calls a header in every section, hence this repeatable replacement (name +
+% section title + rule, matching the cover styling).
+\makeatletter
+\newcommand{\portfoliotitle}{%
+  {\raggedright
+   {\color{color1}\huge\bfseries \@firstname\ \@familyname\par}
+   \vspace{0.1in}
+   {\color{color1}\Large \@title\par}
+   \vspace{0.1in}
+   {\color{color1}\rule{\textwidth}{1pt}\par}
+   \vspace{0.25in}}%
+}
+\makeatother
