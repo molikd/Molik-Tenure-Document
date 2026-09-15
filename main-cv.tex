@@ -51,19 +51,9 @@
 \addbibresource{gradthesis.bib}
 \addbibresource{ugradthesis.bib}
 
-% Declare categories
-\DeclareBibliographyCategory{journal}
-\DeclareBibliographyCategory{conference}
-\DeclareBibliographyCategory{corresponding}
-\DeclareBibliographyCategory{whitepapers}
-\DeclareBibliographyCategory{talks}
-\DeclareBibliographyCategory{gradthesis}
-\DeclareBibliographyCategory{ugradthesis}
-
-% categorize entries by source file
+% Load all entries from all .bib files (filtering is by bib keywords=).
 \AtBeginDocument{%
-  \nocite{*} % Load all entries from all .bib files
-  %\forcsvlist{\addtocategory{journal}}{bird2025balrog, cannon2025guidelines, drolet2024increased, v15102108, 10.1371/journal.pone.0235303, yiyuan2019epps, ho2018single, cumming2016future}
+  \nocite{*}
 }
 
 % Font & links
@@ -98,15 +88,6 @@
 %\quote{Not Attention, Patience is all we need.}
 
 %----------------------------------------------------------------------------------------
-
-
-\newcommand{\cvdoublecolumn}[2]{%
-  \cvitem[.75em]{}{%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
-    \hfill%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
-    }%
-}
 
 
 %\usepackage{multibbl}
