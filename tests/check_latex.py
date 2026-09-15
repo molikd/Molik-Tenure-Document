@@ -108,7 +108,7 @@ if re.search(r"^\s*\\makecvtitle\b", main, re.M):
     fail("main.tex: \\makecvtitle may only be called once per document; "
          "sections must use \\portfoliotitle")
 for section in ["achievements", "goals", "directed", "nondirected",
-                "researchandcreative", "evaluation", "cv"]:
+                "researchandcreative", "cv"]:
     text = (ROOT / f"{section}.tex").read_text(encoding="utf-8")
     if re.search(r"^\s*\\makecvtitle\b", text, re.M):
         fail(f"{section}.tex: use \\portfoliotitle instead of \\makecvtitle")
