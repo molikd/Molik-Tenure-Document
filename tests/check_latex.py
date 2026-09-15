@@ -25,7 +25,7 @@ def warn(msg):
 
 
 def root_sources():
-    return sorted(ROOT.glob("*.tex")) + sorted(ROOT.glob("*.bib"))
+    return sorted(ROOT.glob("*.tex")) + sorted(ROOT.glob("shared/*.tex")) + sorted(ROOT.glob("*.bib"))
 
 
 # --- 1. Duplicate bibliography keys (biber errors out) ---------------------
