@@ -54,8 +54,41 @@
 
 %----------------------------------------------------------------------------------------
 
-% Stable narrative links to the compiled evidence index.
-\newcommand{\evidenceref}[1]{\,\hyperlink{evidence-#1}{[#1]}}
+% Stable narrative links to the compiled evidence index. The first use of each
+% code in the document also shows a short plain-language label, so readers can
+% decode the reference system on first encounter without wading through it
+% afterward; the code still matches the detail in evidence-2026.tex.
+\newcommand{\evidencecode}[2]{%
+  \expandafter\def\csname evidencelabel@#1\endcsname{#2}%
+  \expandafter\newif\csname ifevidenceshown@#1\endcsname
+  \csname evidenceshown@#1false\endcsname}
+\evidencecode{P1}{2025 portfolio}
+\evidencecode{L1}{leadership appointment}
+\evidencecode{L2}{staffing and mentoring}
+\evidencecode{L3}{proposal mentoring}
+\evidencecode{L4}{research consultations}
+\evidencecode{L5}{OPE landscape}
+\evidencecode{K1}{reporting tools}
+\evidencecode{D1}{publishing outreach}
+\evidencecode{D2}{service measures}
+\evidencecode{D3}{service direction}
+\evidencecode{G1}{funding records}
+\evidencecode{G2}{OAK-AI}
+\evidencecode{R1}{publication status}
+\evidencecode{R2}{AgBioData}
+\evidencecode{S1}{software}
+\evidencecode{N1}{P\&T governance}
+\evidencecode{N2}{professional service}
+\newcommand{\evidenceref}[1]{%
+  \,\hyperlink{evidence-#1}{%
+    [#1\ifcsname evidencelabel@#1\endcsname
+       \ifcsname ifevidenceshown@#1\endcsname
+         \csname ifevidenceshown@#1\endcsname
+           \else: \csname evidencelabel@#1\endcsname
+             \expandafter\global\csname evidenceshown@#1true\endcsname
+         \fi
+       \fi
+     \fi]}}
 
 % Reserve margins around each complete source page for its evidence label.
 % Source PDFs remain byte-identical; every page is included, without cropping.
@@ -143,8 +176,8 @@ summary is informational and does not replace the HR worksheet.
 
 \begin{tabular}{@{}ll@{}}
 \textbf{Appointment Date at K-State:} & February 25, 2025 \\
-\textbf{Mid-Probation Review Date:} & Pending official HR worksheet \\
-\textbf{Final Tenure Review Date:} & Pending official HR worksheet \\
+\textbf{Mid-Probation Review Date:} & December 2027 \\
+\textbf{Final Tenure Review Date:} & December 2029 \\
 \textbf{Annual Status Worksheet:} &
 \href{https://staffnet.atlassian.net/wiki/spaces/HR/pages/180256990/Annual+Status+Worksheet}
 {Official worksheet location (record still required)} \\

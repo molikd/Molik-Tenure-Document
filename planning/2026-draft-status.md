@@ -101,3 +101,48 @@ supplementary documents and the candidate/colleague final review remain in #4.
 - [x] Retain source locators, page counts and SHA-256 digests in `evidence/supplements.json`.
 
 This assembles the retained relevant PDFs, including prior-year records, the June landscape, issue attachments and supplied proposal packages. Missing non-PDF exports, current forms and other unresolved evidence remain in issue #4. See `evidence/README.md` for scope and maintenance.
+
+## Issue #19 thematic rewrite (September 18)
+
+Implements the decisions recorded in issue #20: the approved framing-paragraph-
+plus-accomplishment-bullets format, the final section themes, sustainability as
+the overarching goal and ethical framework, and Network Building as the
+supporting thread. No accomplishment from the earlier dated draft was removed;
+each was regrouped under its theme, with the primary placement rules and overlap
+resolutions from #20's mapping comment applied.
+
+- [x] Open the Statement of Accomplishments with the scholarly-communication
+  lifecycle and the Libraries' role in it, then define the four sustainability
+  dimensions (financial, operational, technical, intellectual) in plain language.
+- [x] Introduce Network Building as a supporting thread, not a project heading.
+- [x] Reorganize Directed Service into OPE leadership, research development,
+  developing publishing practices, data and infrastructure development, and
+  workforce development.
+- [x] Reorganize Non-Directed Service into professional leadership, developing
+  publishing practices, and data and infrastructure development.
+- [x] Reorganize Research, Scholarly and Creative Activity into developing
+  publishing practices including editorial leadership, scholarly communication
+  research, and workforce development (undergraduate publishing and student
+  outcomes).
+- [x] Place editorial leadership under Research and Creative Activity at the UPP's
+  High weight; keep routine review/committee work in Non-Directed Service and
+  authored papers distinct from edited or recommended work.
+- [x] Spell out acronyms on first use and explain non-Hale organizations,
+  programs, projects and specialist terms in plain language (OPE, SAS, IUSE,
+  OAK-AI, BIO-ISAC, CLOCKSS, IRUS, GAAN/FHR retained as project names, and so on).
+- [ ] Rewrite the five-year goals to state concrete outcomes and their connection
+  to the Libraries, retaining the 2025 pledge as context. Deferred: goals.tex is
+  reverted to the origin/main text for this PR and will be revised under a
+  separate ticket.
+- [x] Carry the corrected review dates (mid-probation December 2027; final tenure
+  review December 2029) into the employment-history front matter.
+- [x] Improve evidence navigation: each coded mark now shows a short
+  plain-language label on first use while keeping the code that matches
+  `evidence-2026.tex`.
+
+Open items remain the evidence and wording follow-ups already tracked in #4
+(signed MOU scan, repository tickets, student/training outcome records,
+AgBioData report reconciliation, IUSE September 16 outcomes, KPI validation and
+the National Academies nomination status). Those limits are stated in the
+narrative rather than resolved by this rewrite.
+
