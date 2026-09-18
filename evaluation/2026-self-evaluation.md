@@ -1,10 +1,13 @@
 # 2026 Annual Self Evaluation
 
-**David Molik**  
-Associate Professor and Department Head, Open Publishing Exchange  
+**David Molik**
+
+Associate Professor and Department Head, Open Publishing Exchange
+
 Kansas State University Libraries
 
-**Working draft for review — September 18, 2026**  
+**Working draft for review — September 18, 2026**
+
 Accomplishment evidence reviewed through September 15, 2026; organization and framing reflect the subsequent discussion with Michelle. This is the employee self-summary. Current-year supervisor ratings, comments, and signatures are separate.
 
 ## Overview
