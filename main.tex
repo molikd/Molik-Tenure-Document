@@ -56,6 +56,28 @@
 
 % Stable narrative links to the compiled evidence index.
 \newcommand{\evidenceref}[1]{\,\hyperlink{evidence-#1}{[#1]}}
+
+% Reserve margins around each complete source page for its evidence label.
+% Source PDFs remain byte-identical; every page is included, without cropping.
+\newcounter{evidencesourcepage}
+\newcommand{\evidencepdf}[4]{%
+  \clearpage
+  \setcounter{evidencesourcepage}{0}%
+  \includepdf[pages=-,scale=0.88,
+    addtotoc={1,subsection,2,{#1 --- #2},supplement-#1},
+    pagecommand={%
+      \thispagestyle{empty}%
+      \stepcounter{evidencesourcepage}%
+      \AddToShipoutPictureFG*{%
+        \AtPageUpperLeft{\put(0,-28){\makebox[\paperwidth]{%
+          \small\bfseries Evidence #1 --- #2}}}%
+        \AtPageLowerLeft{\put(0,18){\makebox[\paperwidth]{%
+          \small Source page \arabic{evidencesourcepage} of #4
+          \quad\textbar\quad Portfolio page \thepage}}}%
+      }%
+    }]{#3}%
+}
+
 \begin{document}
 % ModernCV loads/configures hyperref in AtEndPreamble; set metadata here
 % after that hook so its defaults cannot overwrite these document-specific values.
@@ -151,21 +173,11 @@ summary is informational and does not replace the HR worksheet.
 \input{researchandcreative.tex}
 \clearpage
 
-% Source index is supporting documentation; final submission placement awaits review.
+% The CV precedes the source index and complete supplementary documents.
+\input{cv.tex}
+\clearpage
 \input{evidence-2026.tex}
 \clearpage
-
-% Position Description
-% recommendation form
-\includepdf[pages=-]{pd.pdf}
-
-% Evaluation
-\includepdf[pages=-]{evidence/2025/evaluation-signed.pdf}
-
-% Prior annual reappointment recommendation, supplied signed copy.
-\includepdf[pages=-]{evidence/2025/reappointment-letter-signed.pdf}
-
-% Include CV
-\input{cv.tex}
+\input{supplements-2026.tex}
 
 \end{document}

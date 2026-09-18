@@ -93,3 +93,11 @@ The plain-language pass retains the June landscape, named activities, date-first
 entries and inline evidence, with shorter prior-year context and emphasis on 2026.
 See [editorial review and remaining work](2026-editorial-review.md). Full labeled
 supplementary documents and the candidate/colleague final review remain in #4.
+
+## September 16 supplementary assembly
+
+- [x] Append the source index and 27 full, labeled evidence PDFs after the CV (506 source pages).
+- [x] Link existing evidence marks to numbered documents and preserve original PDF bytes.
+- [x] Retain source locators, page counts and SHA-256 digests in `evidence/supplements.json`.
+
+This assembles the retained relevant PDFs, including prior-year records, the June landscape, issue attachments and supplied proposal packages. Missing non-PDF exports, current forms and other unresolved evidence remain in issue #4. See `evidence/README.md` for scope and maintenance.

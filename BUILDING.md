@@ -6,7 +6,7 @@ section/bibliography inputs travel with it, including the shared preamble in
 `shared/`.
 
 ```sh
-# Portfolio (49 pages) and standalone CV (6 pages), artifacts to ./build:
+# Portfolio (including full evidence PDFs) and standalone CV, artifacts to ./build:
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex main-cv.tex
 
 # Static checks (no TeX installation needed):

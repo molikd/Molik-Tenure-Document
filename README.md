@@ -21,6 +21,7 @@ CI behavior, integration tests and accessibility limitations.
 
 - [2026 manuscript status](planning/2026-draft-status.md): implemented narrative and remaining submission requirements.
 - `evidence-2026.tex`: compiled source index linked from the narrative.
+- [Supplementary evidence](evidence/README.md): full PDFs with evidence labels, appended after the CV.
 
 
 - [2026 evidence register](planning/2026-evidence-register.md): supporting sources and evidence tracking.
