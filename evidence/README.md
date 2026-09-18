@@ -29,6 +29,8 @@ reviewer-access controls.
 To add a PDF, retain the original, append its metadata to `supplements.json`,
 add its index line and `\evidencepdf` call to `supplements-2026.tex`, and link it
 from the appropriate evidence note. Use a stable suffix under the existing
-mark. Include every source page. Rebuild both roots, run the static and unit
+mark. Name evidence files descriptively with words joined by `_` and a single
+terminal `.pdf` (no other `.` in the name), e.g. `<filename_with_words>.pdf`.
+Include every source page. Rebuild both roots, run the static and unit
 checks, verify source hashes/page counts and links, and inspect the rendered
 labels and source pages. Do not replace source PDFs to add labels.

@@ -38,7 +38,7 @@
   {
     "mark": "K1.1",
     "title": "KPI report: August 31 snapshot",
-    "path": "evidence/2026/kpi-report.pdf",
+    "path": "evidence/2026/kpi_report_August_31_2026_snapshot.pdf",
     "source": "https://github.com/user-attachments/files/32247198/kpi-report.pdf",
     "pages": 10,
     "sha256": "86cfd5d3680673c75c14a9d72c5dc513fe2a7538b15702879fdb342a33758571",
@@ -47,7 +47,7 @@
   {
     "mark": "D1.1",
     "title": "Research Weekly workshop correspondence",
-    "path": "evidence/2026/RE.Research.Weekly.submission.pdf",
+    "path": "evidence/2026/research_weekly_workshop_followup_correspondence_May_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247453/RE.Research.Weekly.submission.pdf",
     "pages": 3,
     "sha256": "e82784a8a787ff1a1252eee36bfec2712965e97ff9bcb0265bacf2088249e30f",
@@ -56,7 +56,7 @@
   {
     "mark": "D1.2",
     "title": "Research Weekly open-data blurb",
-    "path": "evidence/2026/RE.Research.Weekly.Blurb.pdf",
+    "path": "evidence/2026/research_weekly_open_data_serials_crisis_blurb_June_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247454/RE.Research.Weekly.Blurb.pdf",
     "pages": 4,
     "sha256": "818403c4d6c3ec0fe83ee65a1caf1c0294fee4c3736cf801b6bae5aca3fe9e91",
@@ -65,7 +65,7 @@
   {
     "mark": "D1.3",
     "title": "ID3A workshop reminder",
-    "path": "evidence/2026/Reminder.and.Instructions.for.ID3A.Data.Curation.for.Grant.Output.Workshop.pdf",
+    "path": "evidence/2026/ID3A_data_curation_grant_output_workshop_reminder_and_instructions.pdf",
     "source": "https://github.com/user-attachments/files/32247983/Reminder.and.Instructions.for.ID3A.Data.Curation.for.Grant.Output.Workshop.pdf",
     "pages": 2,
     "sha256": "1f99a162315b63fe8c86e4b3478a1418c8ba0fd5088ce9c2698eaefc14a523e2",
@@ -74,7 +74,7 @@
   {
     "mark": "G1.1",
     "title": "FAIROS Genome Notes correspondence",
-    "path": "evidence/2026/Re.Genome.Notes.FAIROS.Genome.Notes.Grant.pdf",
+    "path": "evidence/2026/FAIROS_genome_notes_submission_correspondence_April_to_June_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247249/Re.Genome.Notes.FAIROS.Genome.Notes.Grant.pdf",
     "pages": 17,
     "sha256": "a099fd698dfa3d873f0da61e552b29a32d671940235809821a0cb3b4e5d47bc8",
@@ -83,7 +83,7 @@
   {
     "mark": "G1.2",
     "title": "Olds SAS data-curation request",
-    "path": "evidence/2026/FW.Cassanda.Olds.SAS.Proposal.Data.Curation.Support.pdf",
+    "path": "evidence/2026/SAS_OPE_data_infrastructure_component_request_Olds_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247302/FW.Cassanda.Olds.SAS.Proposal.Data.Curation.Support.pdf",
     "pages": 2,
     "sha256": "66de2c23660f5ee52e3f737bda629263c4d5f098e82968ca2f038e9d28625b66",
@@ -92,7 +92,7 @@
   {
     "mark": "G1.3",
     "title": "IDSS proposal concept",
-    "path": "evidence/2026/FW.NSF.IDSS.Proposal.Concept.pdf",
+    "path": "evidence/2026/NSF_IDSS_proposal_concept_correspondence_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247984/FW.NSF.IDSS.Proposal.Concept.pdf",
     "pages": 9,
     "sha256": "144df882303d7de07f5f1c91c2eb022899783615c274129644c9f5622878bae9",
@@ -101,7 +101,7 @@
   {
     "mark": "G1.4",
     "title": "ID3A seed-funding follow-up",
-    "path": "evidence/2026/RE.ID3A.Seed.grant.funds.follow.up.pdf",
+    "path": "evidence/2026/ID3A_seed_grant_funds_followup_correspondence_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247981/RE.ID3A.Seed.grant.funds.follow.up.pdf",
     "pages": 2,
     "sha256": "35fc8dd0b46d9f87c15658d41fa81194f9fc8818eb126af14cc5928c14ba2573",
@@ -110,7 +110,7 @@
   {
     "mark": "G1.5",
     "title": "ID3A spend-out correspondence",
-    "path": "evidence/2026/Re.ID3A.Grant.Spend.Out.pdf",
+    "path": "evidence/2026/ID3A_grant_spendout_correspondence_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247982/Re.ID3A.Grant.Spend.Out.pdf",
     "pages": 3,
     "sha256": "1210877333486dd3a20ed7cb98101e22921cbecfff18c047a3638377cc1735a1",
@@ -119,7 +119,7 @@
   {
     "mark": "G1.6",
     "title": "Ag-DEx submission acknowledgment",
-    "path": "evidence/2026/OSP_26-2133_SUBMISSION_CONFIRMATION.pdf",
+    "path": "evidence/2026/AgDEx_OSP_26_2133_submission_confirmation_receipt_June_2026.pdf",
     "source": "Candidate-supplied OneDrive_2_9-15-2026.zip / OSP_26-2133_SUBMISSION_CONFIRMATION.pdf",
     "pages": 2,
     "sha256": "b75a5ea3b72c933b96988907db0efa091935d0f8dd4d43c10731091d95e86405",
@@ -128,7 +128,7 @@
   {
     "mark": "G1.7",
     "title": "Ag-DEx program acknowledgment",
-    "path": "evidence/2026/OSP_26-2133_SUBMISSION_CONFIRMATION1.pdf",
+    "path": "evidence/2026/AgDEx_OSP_26_2133_program_acknowledgment_June_2026.pdf",
     "source": "Candidate-supplied OneDrive_2_9-15-2026.zip / OSP_26-2133_SUBMISSION_CONFIRMATION1.pdf",
     "pages": 2,
     "sha256": "647a69718120fb8460747ad1348b9f26e84b6bb94859e6aa38189c5c57531ede",
@@ -137,7 +137,7 @@
   {
     "mark": "G1.8",
     "title": "Ag-DEx submitted proposal",
-    "path": "evidence/2026/OSP_26-2133_Submitted_proposal.pdf",
+    "path": "evidence/2026/AgDEx_submitted_proposal_OSP_26_2133_June_2026.pdf",
     "source": "Candidate-supplied OneDrive_2_9-15-2026.zip / OSP_26-2133_Submitted_proposal.pdf",
     "pages": 68,
     "sha256": "70e1a68a7af8498d867e41df0164f3e325125ad3e186dc1a405c3f0b0bca6ab1",
@@ -146,7 +146,7 @@
   {
     "mark": "G1.9",
     "title": "K-FORGE proposal",
-    "path": "evidence/2026/K-FORGE-Proposal.pdf",
+    "path": "evidence/2026/K_FORGE_NSF_proposal_2638522_submitted_July_2026.pdf",
     "source": "Candidate-supplied OneDrive_3_9-15-2026.zip / K-FORGE Proposal.pdf",
     "pages": 99,
     "sha256": "1707d5d2b4e1407e089e4b9e78cfcedf6fd3bffae0d8ddaeea038bfa7bf72492",
@@ -155,7 +155,7 @@
   {
     "mark": "G1.10",
     "title": "ID3A updated seed-proposal budget",
-    "path": "evidence/2026/ID3A_Seed_Proposal_Budget_Updated.pdf",
+    "path": "evidence/2026/ID3A_seed_proposal_updated_budget_2026.pdf",
     "source": "Candidate-supplied OneDrive_1_9-15-2026.zip / ID3A_Seed_Proposal_Budget_Updated.pdf",
     "pages": 1,
     "sha256": "290a4d421f46bc95df3c459a7edf40d4ebcecc062e7ebc9e70631f66849ccac7",
@@ -164,7 +164,7 @@
   {
     "mark": "G1.11",
     "title": "FFAR full application",
-    "path": "evidence/2026/Application_2249716.pdf",
+    "path": "evidence/2026/FFAR_new_innovators_full_application_2249716_submitted_April_29_2026.pdf",
     "source": "Candidate-supplied Application_2249716.pdf; issue #4 attachment reconciliation",
     "pages": 51,
     "sha256": "03584a3893366708787ddbf5be026ef8643dc21846835ee3b2cd84970cf4d434",
@@ -173,7 +173,7 @@
   {
     "mark": "G2.1",
     "title": "OAK-AI proposal correspondence",
-    "path": "evidence/2026/Re.NSF.proposal.OAK-AI.Hub.pdf",
+    "path": "evidence/2026/OAK_AI_hub_NSF_proposal_correspondence_Sept_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247489/Re.NSF.proposal.OAK-AI.Hub.pdf",
     "pages": 24,
     "sha256": "2bb82551928fba8be03870bf99f2c553fd5e7b7d2c67f3eba383c717976d6647",
@@ -182,7 +182,7 @@
   {
     "mark": "G2.2",
     "title": "OAK-AI research services correspondence",
-    "path": "evidence/2026/Re.Potential.network-wide.evaluation.and.open.research.services.for.OAK-AI.Hub.pdf",
+    "path": "evidence/2026/OAK_AI_hub_network_wide_evaluation_and_open_research_services_proposal_Sept_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247512/Re.Potential.network-wide.evaluation.and.open.research.services.for.OAK-AI.Hub.pdf",
     "pages": 3,
     "sha256": "5076f9a3b4708dcfbc930f35bdd96e8cc4dc9e4654b653cc657aa72ddd350bc9",
@@ -191,7 +191,7 @@
   {
     "mark": "R1.1",
     "title": "GenResJ manuscript preparation",
-    "path": "evidence/2026/genresj.submission.prep.pdf",
+    "path": "evidence/2026/GenResJ_manuscript_preparation_meeting_notes_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247595/genresj.submission.prep.pdf",
     "pages": 37,
     "sha256": "b928667040a5d0fbc0a8a54c67bd4120d8c01725acbc49270d3877a29779aedf",
@@ -200,7 +200,7 @@
   {
     "mark": "R1.2",
     "title": "The Future is FAIR: revised manuscript",
-    "path": "evidence/2026/MarranoA_Revised.pdf",
+    "path": "evidence/2026/future_is_FAIR_revised_manuscript_Marrano_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247880/MarranoA_Revised.pdf",
     "pages": 23,
     "sha256": "4d3ddf17322ac0f08d742a8f949af25fe290f8810f59ee6628a6ed5009f26744",
@@ -209,7 +209,7 @@
   {
     "mark": "R1.3",
     "title": "The Future is FAIR: response to reviewers",
-    "path": "evidence/2026/Response.to.Reviewers.-.Database.2026.pdf",
+    "path": "evidence/2026/future_is_FAIR_response_to_reviewers_Database_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247879/Response.to.Reviewers.-.Database.2026.pdf",
     "pages": 6,
     "sha256": "e62db35b46c21d74d980405c66745e13cadc4d4ef24e3dd39785651c0a4872e8",
@@ -218,7 +218,7 @@
   {
     "mark": "R2.1",
     "title": "AgBioData annual-report preview",
-    "path": "evidence/2026/AgBioDataAnnualReport2026.pdf",
+    "path": "evidence/2026/AgBioData_annual_report_preview_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247823/AgBioDataAnnualReport2026.pdf",
     "pages": 42,
     "sha256": "a39da35a46dd63d4f07c4bb78fba901bd7c79f44f253e61a6f1701bfc7d21a83",
@@ -227,7 +227,7 @@
   {
     "mark": "R2.2",
     "title": "AgBioData AI-generated meeting notes",
-    "path": "evidence/2026/2026.SC.Meetings.-.AI-generated.Notes.pdf",
+    "path": "evidence/2026/AgBioData_steering_committee_AI_generated_meeting_notes_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247822/2026.SC.Meetings.-.AI-generated.Notes.pdf",
     "pages": 16,
     "sha256": "b2aba1bf237e0f178d713763300af0b1aaaa69e9f6de3585f824c543811e73b5",
@@ -236,7 +236,7 @@
   {
     "mark": "N2.1",
     "title": "i5k executive notes",
-    "path": "evidence/2026/i5k.exec.notes.pdf",
+    "path": "evidence/2026/i5k_executive_committee_meeting_notes_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247777/i5k.exec.notes.pdf",
     "pages": 50,
     "sha256": "064a099f44a2ff1b4b37c670ee9f64c9c73d3fa0b552a9ae61c0a532fcfaf16f",
