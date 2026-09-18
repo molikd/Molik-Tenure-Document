@@ -130,8 +130,10 @@ resolutions from #20's mapping comment applied.
 - [x] Spell out acronyms on first use and explain non-Hale organizations,
   programs, projects and specialist terms in plain language (OPE, SAS, IUSE,
   OAK-AI, BIO-ISAC, CLOCKSS, IRUS, GAAN/FHR retained as project names, and so on).
-- [x] Rewrite the five-year goals to state concrete outcomes and their connection
-  to the Libraries, retaining the 2025 pledge as context.
+- [ ] Rewrite the five-year goals to state concrete outcomes and their connection
+  to the Libraries, retaining the 2025 pledge as context. Deferred: goals.tex is
+  reverted to the origin/main text for this PR and will be revised under a
+  separate ticket.
 - [x] Carry the corrected review dates (mid-probation December 2027; final tenure
   review December 2029) into the employment-history front matter.
 - [x] Improve evidence navigation: each coded mark now shows a short
