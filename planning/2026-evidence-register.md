@@ -76,3 +76,9 @@ Working inventory as of September 9, 2026. Source: Tenure Achievements 2026 - Gu
 ## September 15 supplement: June landscape
 
 Direct PDF/StaffNet review is documented in [the source supplement](2026-staffnet-ticket-evidence.md). David identifies writing the June 2026 OPE landscape; the supplied draft is retained byte-identically in `evidence/2026/ope-landscape-june-2026.pdf`. StaffNet links it in Department Overviews. This supports strategic writing and service planning, with authorship/month based on the candidate account and circulation observed by September 15. Proposed staffing, funding and implementation remain proposals. Narrative/evidence anchor: L5.
+
+## September 23 supplement: published open-access and open-data article
+
+David supplied the complete July 15, 2026 Research Weekly newsletter and identifies himself as author of **“From the Library: What actually is Open Access/Open Data?”** The article appears on PDF pages 3–4; the full five-page original is retained as [D1.4](../evidence/2026/research_weekly_open_access_open_data_July_15_2026.pdf). The newsletter confirms publication on July 15 (not the September 23 print/export date). It does not include an individual byline; attribution is candidate-confirmed.
+
+This supersedes the earlier draft-only status of the second Research Weekly piece. Classify it as Directed Service / publishing outreach and the UPP core-responsibilities expectation; do not count it as a peer-reviewed research article or infer readership, adoption, or measured impact. The earlier June correspondence remains preserved as D1.2. Related trackers: #4, #18, #21.
