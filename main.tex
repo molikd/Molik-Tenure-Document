@@ -54,41 +54,42 @@
 
 %----------------------------------------------------------------------------------------
 
-% Stable narrative links to the compiled evidence index. The first use of each
-% code in the document also shows a short plain-language label, so readers can
-% decode the reference system on first encounter without wading through it
-% afterward; the code still matches the detail in evidence-2026.tex.
+% Plain-language evidence labels retain stable source-index anchors. During the
+% section-by-section migration, calls without an optional label retain codes.
 \newcommand{\evidencecode}[2]{%
-  \expandafter\def\csname evidencelabel@#1\endcsname{#2}%
-  \expandafter\newif\csname ifevidenceshown@#1\endcsname
-  \csname evidenceshown@#1false\endcsname}
-\evidencecode{P1}{2025 portfolio}
-\evidencecode{L1}{leadership appointment}
-\evidencecode{L2}{staffing and mentoring}
-\evidencecode{L3}{proposal mentoring}
-\evidencecode{L4}{research consultations}
-\evidencecode{L5}{OPE landscape}
-\evidencecode{K1}{reporting tools}
-\evidencecode{D1}{publishing outreach}
-\evidencecode{D2}{service measures}
-\evidencecode{D3}{service direction}
-\evidencecode{G1}{funding records}
-\evidencecode{G2}{OAK-AI}
-\evidencecode{R1}{publication status}
-\evidencecode{R2}{AgBioData}
-\evidencecode{S1}{software}
-\evidencecode{N1}{P\&T governance}
-\evidencecode{N2}{professional service}
-\newcommand{\evidenceref}[1]{%
-  \,\hyperlink{evidence-#1}{%
-    [#1\ifcsname evidencelabel@#1\endcsname
-       \ifcsname ifevidenceshown@#1\endcsname
-         \csname ifevidenceshown@#1\endcsname
-           \else: \csname evidencelabel@#1\endcsname
-             \expandafter\global\csname evidenceshown@#1true\endcsname
-         \fi
-       \fi
-     \fi]}}
+  \expandafter\def\csname evidencelabel@#1\endcsname{#2}}
+\evidencecode{P1}{Prior portfolio and appointment records}
+\evidencecode{L1}{Leadership appointments}
+\evidencecode{L2}{Staffing and mentoring}
+\evidencecode{L3}{Faculty proposal mentoring}
+\evidencecode{L4}{Research consultations}
+\evidencecode{L5}{OPE landscape and executive summary}
+\evidencecode{K1}{Publication reports and prototypes}
+\evidencecode{D1}{Publishing services and outreach}
+\evidencecode{D2}{Fundraising and service measures}
+\evidencecode{D3}{Service-direction presentations}
+\evidencecode{G1}{Funding and proposal records}
+\evidencecode{G2}{OAK-AI correspondence}
+\evidencecode{R1}{Publications and manuscripts}
+\evidencecode{R2}{AgBioData research coordination}
+\evidencecode{S1}{Software contributions}
+\evidencecode{N1}{Faculty and staff governance}
+\evidencecode{N2}{Professional and editorial service}
+\evidencecode{A1}{2026 activity register}
+\newif\ifevidencelinks
+\evidencelinkstrue
+\newcommand{\evidenceref}[2][]{%
+  \begingroup
+  \def\evidencetext{[#2]}%
+  \if\relax\detokenize{#1}\relax\else
+    \def\evidencetext{[EVIDENCE: #1]}%
+  \fi
+  \,\ifevidencelinks
+    \hyperlink{evidence-#2}{\evidencetext}%
+  \else
+    \evidencetext
+  \fi
+  \endgroup}
 
 % Reserve margins around each complete source page for its evidence label.
 % Source PDFs remain byte-identical; every page is included, without cropping.
