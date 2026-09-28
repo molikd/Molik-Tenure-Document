@@ -1,5 +1,11 @@
 # 2026 portfolio: first manuscript draft
 
+**September 28 update:** See [issue #32 verification](2026-issue-32-verification.md)
+for the current coverage audit, plain-language evidence labels, source excerpts,
+and completion status. Earlier checklists below record their historical passes;
+their deferred goals and coded-label notes are superseded. Submission records
+and supervisor review remain in #4.
+
 Evidence cutoff: September 15, 2026. Built from merged main `5e97bb3` and the
 accumulated source reviews in issue #4, especially comments 5682646028,
 5683209268, 5683515539, 5683752795 and 5683940839. This drafting pass reviewed

@@ -54,61 +54,77 @@
 
 %----------------------------------------------------------------------------------------
 
-% Stable narrative links to the compiled evidence index. The first use of each
-% code in the document also shows a short plain-language label, so readers can
-% decode the reference system on first encounter without wading through it
-% afterward; the code still matches the detail in evidence-2026.tex.
+% Plain-language evidence labels retain stable source-index anchors.
+% Optional labels permit specific descriptions; defaults come from the legend.
 \newcommand{\evidencecode}[2]{%
-  \expandafter\def\csname evidencelabel@#1\endcsname{#2}%
-  \expandafter\newif\csname ifevidenceshown@#1\endcsname
-  \csname evidenceshown@#1false\endcsname}
-\evidencecode{P1}{2025 portfolio}
-\evidencecode{L1}{leadership appointment}
-\evidencecode{L2}{staffing and mentoring}
-\evidencecode{L3}{proposal mentoring}
-\evidencecode{L4}{research consultations}
-\evidencecode{L5}{OPE landscape}
-\evidencecode{K1}{reporting tools}
-\evidencecode{D1}{publishing outreach}
-\evidencecode{D2}{service measures}
-\evidencecode{D3}{service direction}
-\evidencecode{G1}{funding records}
-\evidencecode{G2}{OAK-AI}
-\evidencecode{R1}{publication status}
-\evidencecode{R2}{AgBioData}
-\evidencecode{S1}{software}
-\evidencecode{N1}{P\&T governance}
-\evidencecode{N2}{professional service}
-\newcommand{\evidenceref}[1]{%
-  \,\hyperlink{evidence-#1}{%
-    [#1\ifcsname evidencelabel@#1\endcsname
-       \ifcsname ifevidenceshown@#1\endcsname
-         \csname ifevidenceshown@#1\endcsname
-           \else: \csname evidencelabel@#1\endcsname
-             \expandafter\global\csname evidenceshown@#1true\endcsname
-         \fi
-       \fi
-     \fi]}}
+  \expandafter\def\csname evidencelabel@#1\endcsname{#2}}
+\evidencecode{P1}{Prior portfolio and appointment records}
+\evidencecode{L1}{Leadership appointments}
+\evidencecode{L2}{Staffing and mentoring}
+\evidencecode{L3}{Faculty proposal mentoring}
+\evidencecode{L4}{Research consultations}
+\evidencecode{L5}{OPE landscape and executive summary}
+\evidencecode{K1}{Publication reports and prototypes}
+\evidencecode{D1}{Publishing services and outreach}
+\evidencecode{D2}{Fundraising and service measures}
+\evidencecode{D3}{Service-direction presentations}
+\evidencecode{G1}{Funding and proposal records}
+\evidencecode{G2}{OAK-AI correspondence}
+\evidencecode{R1}{Publications and manuscripts}
+\evidencecode{R2}{AgBioData research coordination}
+\evidencecode{S1}{Software contributions}
+\evidencecode{N1}{Faculty and staff governance}
+\evidencecode{N2}{Professional and editorial service}
+\evidencecode{A1}{2026 activity register}
+\newif\ifevidencelinks
+\evidencelinkstrue
+\newcommand{\evidenceref}[2][]{%
+  \begingroup
+  \def\evidencetext{[EVIDENCE: \csname evidencelabel@#2\endcsname]}%
+  \if\relax\detokenize{#1}\relax\else
+    \def\evidencetext{[EVIDENCE: #1]}%
+  \fi
+  \,\ifevidencelinks
+    \hyperlink{evidence-#2}{\evidencetext}%
+  \else
+    \evidencetext
+  \fi
+  \endgroup}
 
-% Reserve margins around each complete source page for its evidence label.
-% Source PDFs remain byte-identical; every page is included, without cropping.
+% Reserve margins around intact source pages; originals remain byte-identical.
+% An optional explicit page list selects excerpts and preserves source numbering.
+\ExplSyntaxOn
+\NewExpandableDocumentCommand{\evidenceoriginalpage}{mm}{\clist_item:nn{#1}{#2}}
+\ExplSyntaxOff
 \newcounter{evidencesourcepage}
-\newcommand{\evidencepdf}[4]{%
+\newcommand{\evidencepdf}[5][-]{%
   \clearpage
+  \begingroup
+  \def\evidenceselection{#1}\def\evidenceallpages{-}%
+  \ifx\evidenceselection\evidenceallpages
+    \def\evidencefirstpage{1}%
+    \def\evidencecurrentpage{\arabic{evidencesourcepage}}%
+  \else
+    \edef\evidencefirstpage{\evidenceoriginalpage{#1}{1}}%
+    \def\evidencecurrentpage{\evidenceoriginalpage{#1}{\value{evidencesourcepage}}}%
+  \fi
   \setcounter{evidencesourcepage}{0}%
-  \includepdf[pages=-,scale=0.88,
-    addtotoc={1,subsection,2,{#1 --- #2},supplement-#1},
+  % pdfpages addtotoc matches the original PDF page, not its excerpt position.
+  % For an excerpt starting at source page 2, using 1 would omit the TOC anchor.
+  \includepdf[pages={#1},scale=0.88,
+    addtotoc={\evidencefirstpage,subsection,2,{#2 --- #3},supplement-#2},
     pagecommand={%
       \thispagestyle{empty}%
       \stepcounter{evidencesourcepage}%
       \AddToShipoutPictureFG*{%
         \AtPageUpperLeft{\put(0,-28){\makebox[\paperwidth]{%
-          \small\bfseries Evidence #1 --- #2}}}%
+          \small\bfseries Evidence #2 --- #3}}}%
         \AtPageLowerLeft{\put(0,18){\makebox[\paperwidth]{%
-          \small Source page \arabic{evidencesourcepage} of #4
+          \small Source page \evidencecurrentpage\ of #5
           \quad\textbar\quad Portfolio page \thepage}}}%
       }%
-    }]{#3}%
+    }]{#4}%
+  \endgroup
 }
 
 \begin{document}
@@ -206,7 +222,7 @@ summary is informational and does not replace the HR worksheet.
 \input{researchandcreative.tex}
 \clearpage
 
-% The CV precedes the source index and complete supplementary documents.
+% The CV precedes the source index and selected supplementary documents.
 \input{cv.tex}
 \clearpage
 \input{evidence-2026.tex}

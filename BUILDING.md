@@ -82,3 +82,14 @@ directory, injects an undefined control sequence, and verifies nonzero status,
 source-error visibility and retained native/summary logs without altering sources.
 Normal output labels dependency checks, actual latexmk rule passes, log audits
 and successful outputs; verbose output additionally streams full native messages.
+
+## macOS universal Biber extraction failure
+
+If the installed universal `biber` fails its version check with
+`extracting arm64 binary with lipo failed`, the September 28 validation used an
+isolated ARM copy of the installed binary. This does not replace the system
+installation. On an ARM Mac, create a temporary directory, run
+`/usr/bin/lipo /Library/TeX/texbin/biber -thin arm64 -output <directory>/biber`,
+make that copy executable, and prepend its directory to `PATH` for the build.
+Verify the copy with `biber --version` before building. CI does not require this
+macOS workaround.
