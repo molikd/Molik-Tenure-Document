@@ -61,3 +61,11 @@ repository/preservation/usage reporting, Pressbooks integration, student mentori
 SLC and LFPS minutes, and research-support coordination. For each relevant result,
 record its original URL, date, named contributor, action, status and outcome;
 separate assignments and collective discussion from completed individual work.
+
+## Sample-portfolio consultation — September 28 update
+
+David confirms that he consulted the sample portfolios on **staffnet**. This
+records his account of the consultation; individual examples are not yet named.
+The official worksheet and review-date confirmation remain open under issues
+#32 and #4. Consultation does not establish completion of those administrative
+requirements.
