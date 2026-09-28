@@ -69,3 +69,26 @@ records his account of the consultation; individual examples are not yet named.
 The official worksheet and review-date confirmation remain open under issues
 #32 and #4. Consultation does not establish completion of those administrative
 requirements.
+
+## Review schedule and worksheet disposition — September 28
+
+Read directly from the candidate-supplied `Master Calendar 2026-2027.xlsx`, sheet
+`2026-2027`: G2 labels Year 2 and G3 names Molik. A18/C18/G18 assign the completed
+evaluation to October 16; A19/C19/G19 assign the portfolio to October 16.
+A20/C20/G20 give committee review October 19–November 2; A23/C23/G23 give
+committee deliberations November 2–3. This confirms the draft's Year 2 schedule
+against the supplied calendar, not a separately verified individual appearance time.
+
+Mid-probation December 2027 and final tenure December 2029 follow the approved
+[September 18 decision record](https://github.com/molikd/Molik-Tenure-Document/issues/20#issuecomment-5721284558).
+The compiled employment history and goals use those dates. The historical 2030
+planning reference is superseded; signed historical documents are unchanged.
+
+The [official Annual Status Review Worksheet location](https://staffnet.atlassian.net/wiki/spaces/HR/pages/180256990/Annual+Status+Worksheet)
+was checked September 28 and redirected to Atlassian login in the available
+browser session. No official worksheet was downloaded or completed. Obtaining
+that record and confirming the individual appearance time remain submission
+assembly tasks in #4; the front-matter placeholder remains truthful. This
+resolves #32's source/ownership handoff without claiming submission readiness.
+Tara Coleman's review is also a #4 follow-up, not a #32 closure prerequisite,
+per David's September 28 instruction.

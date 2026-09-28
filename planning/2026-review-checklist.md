@@ -8,7 +8,7 @@ by issue #4's later evidence reconciliations.
 
 # 2026 review and evidence checklist
 
-The supplied 2026–2027 master calendar places Molik in Year 2 (G3). Evaluation and portfolio are due October 16, 2026; committee review is October 19–November 2 and deliberations November 2–3. Confirm the individual appearance time and official Annual Status Review Worksheet. Existing December 2027/2030 dates remain unverified.
+The supplied 2026–2027 master calendar places Molik in Year 2 (G3). Evaluation and portfolio are due October 16, 2026; committee review is October 19–November 2 and deliberations November 2–3. Confirm the individual appearance time and official Annual Status Review Worksheet. The September 18 decision record supersedes the older 2030 reference: mid-probation is December 2027 and final tenure December 2029. The supplied calendar was rechecked September 28; see [schedule provenance](2026-staffnet-ticket-evidence.md).
 
 David clarified that the proposed 800-word accomplishments and 400-word goals maximums have not come into force. They are provisional guidance, not current compliance limits. Do not add hard word-count tests. Confirm effective versions before applying the newer university page/format requirements.
 

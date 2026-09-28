@@ -91,25 +91,38 @@
   \fi
   \endgroup}
 
-% Reserve margins around each complete source page for its evidence label.
-% Source PDFs remain byte-identical; every page is included, without cropping.
+% Reserve margins around intact source pages; originals remain byte-identical.
+% An optional explicit page list selects excerpts and preserves source numbering.
+\ExplSyntaxOn
+\NewExpandableDocumentCommand{\evidenceoriginalpage}{mm}{\clist_item:nn{#1}{#2}}
+\ExplSyntaxOff
 \newcounter{evidencesourcepage}
-\newcommand{\evidencepdf}[4]{%
+\newcommand{\evidencepdf}[5][-]{%
   \clearpage
+  \begingroup
+  \def\evidenceselection{#1}\def\evidenceallpages{-}%
+  \ifx\evidenceselection\evidenceallpages
+    \def\evidencefirstpage{1}%
+    \def\evidencecurrentpage{\arabic{evidencesourcepage}}%
+  \else
+    \edef\evidencefirstpage{\evidenceoriginalpage{#1}{1}}%
+    \def\evidencecurrentpage{\evidenceoriginalpage{#1}{\value{evidencesourcepage}}}%
+  \fi
   \setcounter{evidencesourcepage}{0}%
-  \includepdf[pages=-,scale=0.88,
-    addtotoc={1,subsection,2,{#1 --- #2},supplement-#1},
+  \includepdf[pages={#1},scale=0.88,
+    addtotoc={\evidencefirstpage,subsection,2,{#2 --- #3},supplement-#2},
     pagecommand={%
       \thispagestyle{empty}%
       \stepcounter{evidencesourcepage}%
       \AddToShipoutPictureFG*{%
         \AtPageUpperLeft{\put(0,-28){\makebox[\paperwidth]{%
-          \small\bfseries Evidence #1 --- #2}}}%
+          \small\bfseries Evidence #2 --- #3}}}%
         \AtPageLowerLeft{\put(0,18){\makebox[\paperwidth]{%
-          \small Source page \arabic{evidencesourcepage} of #4
+          \small Source page \evidencecurrentpage\ of #5
           \quad\textbar\quad Portfolio page \thepage}}}%
       }%
-    }]{#3}%
+    }]{#4}%
+  \endgroup
 }
 
 \begin{document}
@@ -207,7 +220,7 @@ summary is informational and does not replace the HR worksheet.
 \input{researchandcreative.tex}
 \clearpage
 
-% The CV precedes the source index and complete supplementary documents.
+% The CV precedes the source index and selected supplementary documents.
 \input{cv.tex}
 \clearpage
 \input{evidence-2026.tex}

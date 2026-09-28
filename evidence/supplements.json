@@ -141,7 +141,8 @@
     "source": "Candidate-supplied OneDrive_2_9-15-2026.zip / OSP_26-2133_SUBMISSION_CONFIRMATION1.pdf",
     "pages": 2,
     "sha256": "647a69718120fb8460747ad1348b9f26e84b6bb94859e6aa38189c5c57531ede",
-    "note": ""
+    "note": "Retained original; omitted from the portfolio because G1.6 already proves receipt of the same proposal. These are distinct acknowledgments, not byte-identical duplicates.",
+    "included_pages": []
   },
   {
     "mark": "G1.8",
@@ -181,12 +182,16 @@
   },
   {
     "mark": "G2.1",
-    "title": "OAK-AI proposal correspondence",
+    "title": "OAK-AI proposal correspondence (excerpt)",
     "path": "evidence/2026/OAK_AI_hub_NSF_proposal_correspondence_Sept_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247489/Re.NSF.proposal.OAK-AI.Hub.pdf",
     "pages": 24,
     "sha256": "2bb82551928fba8be03870bf99f2c553fd5e7b7d2c67f3eba383c717976d6647",
-    "note": "Concept development, not an award."
+    "note": "September 11 coordination and proposed training, evaluation and data-management services; page 2 retains the signature continuation. G2.2 retains the complete September 14–15 proposal and response. Concept development, not an award.",
+    "included_pages": [
+      1,
+      2
+    ]
   },
   {
     "mark": "G2.2",
@@ -244,11 +249,21 @@
   },
   {
     "mark": "N2.1",
-    "title": "i5k executive notes",
+    "title": "i5k executive notes (excerpts)",
     "path": "evidence/2026/i5k_executive_committee_meeting_notes_2026.pdf",
     "source": "https://github.com/user-attachments/files/32247777/i5k.exec.notes.pdf",
     "pages": 50,
     "sha256": "064a099f44a2ff1b4b37c670ee9f64c9c73d3fa0b552a9ae61c0a532fcfaf16f",
-    "note": "Participation and action items do not establish completion of every assigned action."
+    "note": "2026 training/workforce and shared-infrastructure planning (pp. 2–7); August 2025 chair self-nomination context (pp. 18–19). Notes corroborate planning and participation, not completed training outcomes or independent proof of appointment. Original page numbers retained.",
+    "included_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      18,
+      19
+    ]
   }
 ]
