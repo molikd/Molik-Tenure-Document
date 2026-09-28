@@ -54,8 +54,8 @@
 
 %----------------------------------------------------------------------------------------
 
-% Plain-language evidence labels retain stable source-index anchors. During the
-% section-by-section migration, calls without an optional label retain codes.
+% Plain-language evidence labels retain stable source-index anchors.
+% Optional labels permit specific descriptions; defaults come from the legend.
 \newcommand{\evidencecode}[2]{%
   \expandafter\def\csname evidencelabel@#1\endcsname{#2}}
 \evidencecode{P1}{Prior portfolio and appointment records}
@@ -80,7 +80,7 @@
 \evidencelinkstrue
 \newcommand{\evidenceref}[2][]{%
   \begingroup
-  \def\evidencetext{[#2]}%
+  \def\evidencetext{[EVIDENCE: \csname evidencelabel@#2\endcsname]}%
   \if\relax\detokenize{#1}\relax\else
     \def\evidencetext{[EVIDENCE: #1]}%
   \fi
