@@ -167,3 +167,24 @@ Tara's review is a submission follow-up, not a #32 closure gate.
 - Portfolio: 476 pages including 445 evidence pages. Standalone CV: 7 pages.
   Visual review covers the changed narrative/index pages, excerpts and CV.
 
+### PR review follow-up: excerpt TOC anchor
+
+The September 28 review suggested replacing the first selected source page with
+`1` in `addtotoc`. Verification shows that change would remove the N2.1 anchor:
+`pdfpages` matches `addtotoc` against the original PDF page number, not the
+position in the excerpt. Its installed implementation passes `\AM@page` to
+`\AM@toclof`, the same page number used to read the source PDF.
+
+The existing compiled N2.1 destination lands on portfolio page 469, the first
+excerpt page, labeled source page 2 of 50. The implementation is retained with
+an explanatory comment. `tests/test_excerpt_integration.py` compiles the actual
+evidence macro with source pages 2–3 and asserts that its TOC label targets the
+first inserted page. This test passes; substituting the suggested constant `1`
+in memory makes it fail because no destination is created.
+
+Both roots were revalidated successfully. The default suite now has 10 tests
+(7 passed, 3 opt-in tests skipped); the new excerpt integration test also passed
+when explicitly enabled. PDF destination inspection confirmed page 469 and
+source page 2; Statement pages 4–6 have no links and detailed page 9 retains
+links. Rendered Statement tags, detailed tags, and the first N2.1 excerpt page
+were visually checked.

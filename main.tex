@@ -109,6 +109,8 @@
     \def\evidencecurrentpage{\evidenceoriginalpage{#1}{\value{evidencesourcepage}}}%
   \fi
   \setcounter{evidencesourcepage}{0}%
+  % pdfpages addtotoc matches the original PDF page, not its excerpt position.
+  % For an excerpt starting at source page 2, using 1 would omit the TOC anchor.
   \includepdf[pages={#1},scale=0.88,
     addtotoc={\evidencefirstpage,subsection,2,{#2 --- #3},supplement-#2},
     pagecommand={%
