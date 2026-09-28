@@ -4,7 +4,7 @@ Assembly issue: [hail-local #53](https://github.com/molikd/hail-local/issues/53)
 Broader portfolio tracker: [#4](https://github.com/molikd/Molik-Tenure-Document/issues/4).
 
 The portfolio ends with its source notes, a linked supplementary-material index,
-and 27 complete PDF documents (506 source pages). `supplements-2026.tex` controls
+and 28 complete PDF documents (511 source pages). `supplements-2026.tex` controls
 order. Each page has its evidence mark, document number, source page position,
 and portfolio page number, outside the source image. Narrative marks such as
 G1 link to the source notes; the notes link to individual PDFs such as G1.1.
@@ -34,3 +34,7 @@ terminal `.pdf` (no other `.` in the name), e.g. `<filename_with_words>.pdf`.
 Include every source page. Rebuild both roots, run the static and unit
 checks, verify source hashes/page counts and links, and inspect the rendered
 labels and source pages. Do not replace source PDFs to add labels.
+
+D1.4 is the candidate-supplied July 15, 2026 Research Weekly newsletter, added
+September 23. It preserves all five pages and confirms publication of the
+open-access/open-data article on pages 3–4; authorship is candidate-confirmed.
