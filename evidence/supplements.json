@@ -265,5 +265,14 @@
       18,
       19
     ]
+  },
+  {
+    "mark": "U1.1",
+    "title": "Genome Report author and reviewer guidance",
+    "path": "evidence/2026/Genome_Report_author_reviewer_guidance_October_2026.pdf",
+    "source": "https://doi.org/10.1093/gbe/evag258; candidate local publisher PDF downloaded October 12, 2026",
+    "pages": 28,
+    "sha256": "8f8e211e4fe6fee4fa3b830203c364a7bd0a1e84229fd6f2e1f68892da1017dd",
+    "note": "Publisher accepted manuscript, retained byte-identically; post-September 15 cutoff update. Online availability by October 12 is corroborated by the download footer and ORCID."
   }
 ]

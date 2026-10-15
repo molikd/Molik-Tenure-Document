@@ -152,3 +152,20 @@ AgBioData report reconciliation, IUSE September 16 outcomes, KPI validation and
 the National Academies nomination status). Those limits are stated in the
 narrative rather than resolved by this rewrite.
 
+
+
+## October 15 post-cutoff integration
+
+A separate `october-updates.tex` supplement records eight later developments
+without changing the September 15 cutoff. It adds the Genome Report article,
+JOE submission/interview, MOLT preparation, delivered KO-AI DMSP, K-REx/HAIL
+scoping, BOER onboarding, proposed CyberBio27 role and substantive AgBioData
+manuscript draft. CV proposal development remains distinct from submissions.
+The public Genome Report PDF is retained byte-identically as U1.1; U1 labels
+private source observations whose original exports remain outstanding.
+See [discovery report](2026-10-15-update-discovery-report.md) for locators and
+limits. Before submission, confirm treatment of post-cutoff activity, retain
+private originals with appropriate reviewer access, confirm workshop acceptance
+and roles, and recheck the new article's final publisher metadata. Discovery
+leads about forms, fiscal calculations and inconsistent dates were not silently
+promoted to verified claims.

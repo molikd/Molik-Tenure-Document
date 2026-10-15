@@ -13,7 +13,7 @@ class EvidenceLabelTests(unittest.TestCase):
         index = (ROOT / 'evidence-2026.tex').read_text()
         anchors = re.findall(r'\\hypertarget\{evidence-([^}]+)\}', index)
         self.assertEqual(len(anchors), len(set(anchors)))
-        for name in ('achievements', 'directed', 'nondirected', 'researchandcreative'):
+        for name in ('achievements', 'directed', 'nondirected', 'researchandcreative', 'october-updates'):
             text = (ROOT / f'{name}.tex').read_text()
             refs = re.findall(r'\\evidenceref(?:\[([^\]]+)\])?\{([^}]+)\}', text)
             self.assertTrue(refs, name)
