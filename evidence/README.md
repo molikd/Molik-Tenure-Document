@@ -4,8 +4,8 @@ Assembly issue: [hail-local #53](https://github.com/molikd/hail-local/issues/53)
 Broader portfolio tracker: [#4](https://github.com/molikd/Molik-Tenure-Document/issues/4).
 
 The portfolio ends with its source notes, a linked supplementary-material index,
-and 27 included PDF documents (445 source pages selected from 28 retained
-originals totaling 511 pages). `supplements-2026.tex` controls
+and 28 included PDF documents (473 source pages selected from 29 retained
+originals totaling 539 pages). `supplements-2026.tex` controls
 order. Each page has its evidence mark, document number, source page position,
 and portfolio page number, outside the source image. Narrative tags display plain-language labels such as
 `[EVIDENCE: Funding and proposal records]`. Tags in the Statement are unlinked;
@@ -52,3 +52,11 @@ September 28 selections and their rationale are documented in the
 [issue #32 verification](../planning/2026-issue-32-verification.md). G1.7 is
 retained but not embedded; G2.1 includes pages 1–2 and N2.1 includes pages 2–7
 and 18–19. G2.2 remains complete. No source PDF was rewritten.
+
+
+October 15 post-cutoff supplement: U1.1 retains all 28 pages of the publisher
+accepted manuscript for *How to write (and review) a Genome Report*. U1 records
+direct source observations for seven additional developments. Private mailbox,
+Teams and working-document exports remain outstanding; observations are labeled
+rather than presented as embedded original evidence. See
+[the discovery report](../planning/2026-10-15-update-discovery-report.md).
