@@ -169,3 +169,13 @@ private originals with appropriate reviewer access, confirm workshop acceptance
 and roles, and recheck the new article's final publisher metadata. Discovery
 leads about forms, fiscal calculations and inconsistent dates were not silently
 promoted to verified claims.
+
+
+## October 15 narrative integration follow-up
+
+Moved the eight updates into their thematic evaluation sections, preserving
+explicit post-cutoff dates and source limitations. Directed Service now develops
+the JOE, KO-AI, K-REx/HAIL and BOER milestones; Non-Directed Service adds proposed
+CyberBio27 leadership; Research/Creative adds Genome Report guidance and MOLT,
+and extends the existing AgBioData coordination entry. The October supplement
+is now a linked chronology rather than a second accomplishment narrative.
