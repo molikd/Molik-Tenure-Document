@@ -8,7 +8,7 @@ Kansas State University Libraries
 
 **Working draft for review — revised October 9, 2026**
 
-This self-evaluation follows the expectations and weights in the September 29, 2026 signed UPP sent to HR. It draws primarily on work through September 23 and remains open for later-year updates and supervisor review.
+This self-evaluation follows the expectations and weights in the September 29, 2026 signed UPP sent to HR. It draws primarily on work through September 23 and remains open for later-year updates and supervisor review. 
 
 ## Overview
 
