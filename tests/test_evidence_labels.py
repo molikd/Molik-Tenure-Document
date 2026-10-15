@@ -24,6 +24,14 @@ class EvidenceLabelTests(unittest.TestCase):
                     self.assertTrue(label, 'Section has an unmigrated coded tag')
                     self.assertNotEqual(label, key)
 
+    def test_chronology_links_have_individual_destinations(self):
+        chronology = (ROOT / 'october-updates.tex').read_text()
+        sources = '\n'.join((ROOT / f'{name}.tex').read_text()
+                            for name in ('directed', 'nondirected', 'researchandcreative'))
+        for key in re.findall(r'\\hyperref\[([^]]+)\]', chronology):
+            with self.subTest(key=key):
+                self.assertEqual(sources.count(r'\phantomsection\label{' + key + '}'), 1)
+
 
 if __name__ == '__main__':
     unittest.main()
