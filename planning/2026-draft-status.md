@@ -40,7 +40,7 @@ The compiled evidence index makes that provenance explicit.
 ## Open before final submission
 
 - [ ] Confirm Year 2 annual-review track, formal reporting window, governing criteria and October 16 deadline with supervisor/HR. This draft uses the named calendar placement; it is not a final-tenure application.
-- [ ] Obtain official Annual Status Review Worksheet, current recommendation form, workload statement, applicable position descriptions and current evaluation. The Year 1 / January 2025 recommendation PDF remains in the repository but is replaced in the compiled front matter by an explicit current-form placeholder. The existing position-description PDF remains included pending currentness verification.
+- [ ] Obtain official Annual Status Review Worksheet, current recommendation form, workload statement, applicable position descriptions. The supplied 2026 evaluation is now included as P1.4 (October 16); the supervisor acknowledgment line on source page 14 is blank. The Year 1 / January 2025 recommendation PDF remains in the repository but is replaced in the compiled front matter by an explicit current-form placeholder. The existing position-description PDF remains included pending currentness verification.
 - [ ] Confirm final section/evidence placement and reviewer access. The source index is a draft appendix, not a substitute for original message exports; private sources remain access-controlled.
 - [ ] Retain fully signed MOU scan, LFPS officer term record and selected professional excerpts without unnecessary personnel details.
 - [ ] Obtain September 16 IUSE meeting outcomes after the meeting; no attendance, decisions or proposal submission are inferred yet.

@@ -32,7 +32,7 @@ David clarified that the proposed 800-word accomplishments and 400-word goals ma
 
 ## Remaining assembly and policy work
 
-- [ ] Obtain official worksheet, current position description and all applicable annual evaluations; signed 2025 evaluation and prior letter are now included.
+- [ ] Obtain official worksheet, current position description and all applicable annual evaluations; 2025 and 2026 evaluations and prior letter are now included.
 - [ ] Verify the transmittal form and authorized signer; never prefill votes/signatures.
 - [ ] Reconcile template reporting window with cumulative pre-K-State context in procedures.
 - [ ] Obtain supervisor's annual/average workload statement if university Section II applies; High/Medium/Low evaluation weights are not percentages.
