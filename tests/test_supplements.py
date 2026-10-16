@@ -11,7 +11,10 @@ ROOT = Path(__file__).resolve().parent.parent
 class SupplementTests(unittest.TestCase):
     def test_manifest_matches_pdf_selections(self):
         records = json.loads((ROOT / 'evidence/supplements.json').read_text())
-        source = (ROOT / 'supplements-2026.tex').read_text()
+        source = '\n'.join((ROOT / name).read_text() for name in (
+            'supplements-2026.tex', 'directed-evidence-2026.tex',
+            'nondirected-evidence-2026.tex', 'research-evidence-2026.tex',
+            'evaluations-2026.tex', 'reappointment-letters.tex'))
         includes = re.findall(
             r'\\evidencepdf(?:\[([^\]]+)\])?\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}\{(\d+)\}', source)
         expected = []
@@ -37,17 +40,25 @@ class SupplementTests(unittest.TestCase):
                 expected.append((selection, record['mark'], record['title'], assembly_path, str(record['pages'])))
                 self.assertIn('supplement-' + record['mark'] + ']', index)
                 self.assertIn('evidence-' + record['mark'].split('.')[0] + '}', index)
-        self.assertEqual(includes, expected)
+        self.assertCountEqual(includes, expected)
         self.assertEqual(len({r['mark'] for r in records}), len(records))
         self.assertEqual(len({r['path'] for r in records}), len(records))
         self.assertEqual(re.findall(r'\\hyperref\[supplement-([^]]+)\]', source),
                          [r['mark'] for r in records if r.get('included_pages') != []])
 
-    def test_supplements_follow_cv_and_source_index(self):
+    def test_packet_follows_supplied_document_order(self):
         main = (ROOT / 'main.tex').read_text()
-        self.assertLess(main.index(r'\input{cv.tex}'), main.index(r'\input{evidence-2026.tex}'))
-        self.assertLess(main.index(r'\input{evidence-2026.tex}'), main.index(r'\input{supplements-2026.tex}'))
-        self.assertRegex(main, r'\\input\{supplements-2026.tex\}\s*\\end\{document\}')
+        names = ('recommendation-form', 'achievements', 'goals', 'directed',
+                 'directed-evidence-2026', 'nondirected', 'nondirected-evidence-2026',
+                 'researchandcreative', 'research-evidence-2026', 'evaluations-2026',
+                 'reappointment-letters', 'cv', 'october-updates', 'evidence-2026',
+                 'supplements-2026')
+        positions = [main.index(r'\input{' + name + '.tex}') for name in names]
+        self.assertEqual(positions, sorted(positions))
+        self.assertLess(positions[0], main.index('Employment History'))
+        self.assertLess(main.index('Employment History'), positions[1])
+        letter = (ROOT / 'reappointment-letters.tex').read_text()
+        self.assertIn('evidence/2025/reappointment-letter-signed.pdf', letter)
 
 
 if __name__ == '__main__':

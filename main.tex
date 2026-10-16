@@ -129,6 +129,11 @@
 }
 
 \begin{document}
+% ModernCV measures the footer at page 1; reserve space for full packet numbers.
+\ifdefined\pagenumberwidth
+  \settowidth{\pagenumberwidth}{\color{color2}\addressfont\itshape\strut
+    \pageref{lastpage}/\pageref{lastpage}}
+\fi
 % ModernCV loads/configures hyperref in AtEndPreamble; set metadata here
 % after that hook so its defaults cannot overwrite these document-specific values.
 \hypersetup{pdfauthor={David Molik}, pdftitle={2026 Reappointment Portfolio}}
@@ -164,7 +169,7 @@
     {\normalsize Compiled \today\par}
 }
 \newpage
-
+\input{recommendation-form.tex}
 
 % --- Employment History ---
 % Flush the cover material before embedded evidence pages; pdfpages owns their
@@ -187,7 +192,7 @@
 \textbf{Final Tenure Review Date:} & December 2029 \\
 \textbf{Annual Status Worksheet:} &
 \href{https://staffnet.atlassian.net/wiki/spaces/HR/pages/180256990/Annual+Status+Worksheet}
-{Official worksheet location (record still required)} \\
+{Annual Status Review Worksheet} \\
 \end{tabular}
 
 }
@@ -203,20 +208,31 @@
 
 % Include Directed
 \input{directed.tex}
+\clearpage
+\input{directed-evidence-2026.tex}
 \newpage
 
 % Include Non-Directed
 \input{nondirected.tex}
+\clearpage
+\input{nondirected-evidence-2026.tex}
 \newpage
 
 % Include Research and Creative
 \input{researchandcreative.tex}
 \clearpage
-\input{october-updates.tex}
+\input{research-evidence-2026.tex}
+\clearpage
+\input{evaluations-2026.tex}
+\clearpage
+\input{reappointment-letters.tex}
 \clearpage
 
-% The CV precedes the source index and selected supplementary documents.
+% Vita follows the annual evaluations and previous supervisor letters.
 \input{cv.tex}
+\clearpage
+% Optional supporting documentation follows the Vita.
+\input{october-updates.tex}
 \clearpage
 \input{evidence-2026.tex}
 \clearpage

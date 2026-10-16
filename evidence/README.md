@@ -3,10 +3,11 @@
 Assembly issue: [hail-local #53](https://github.com/molikd/hail-local/issues/53).
 Broader portfolio tracker: [#4](https://github.com/molikd/Molik-Tenure-Document/issues/4).
 
-The portfolio ends with its source notes, a linked supplementary-material index,
-and 29 included PDF documents (497 source pages selected from 30 retained
-originals totaling 563 pages). `supplements-2026.tex` controls
-order. Each page has its evidence mark, document number, source page position,
+The portfolio places supporting evidence after each relevant summary, annual
+records and the previous supervisor letter before the Vita, and source notes
+and a linked document index after the Vita. It includes 29 PDF documents (497 source pages selected from 30 retained
+originals totaling 563 pages). The evidence section inputs in `main.tex` control placement;
+`supplements-2026.tex` provides the final index. Each page has its evidence mark, document number, source page position,
 and portfolio page number, outside the source image. Narrative tags display plain-language labels such as
 `[EVIDENCE: Funding and proposal records]`. Tags in the Statement are unlinked;
 tags in the detailed sections link to the corresponding source notes; the notes link to individual PDFs such as G1.1.
@@ -32,7 +33,8 @@ contain personal and collaborator information; retain the portfolio's existing
 reviewer-access controls.
 
 To add a PDF, retain the original, append its metadata to `supplements.json`,
-add its index line and `\evidencepdf` call to `supplements-2026.tex`, and link it
+add its index line to `supplements-2026.tex` and its `\evidencepdf` call to the
+relevant `*-evidence-2026.tex`, `evaluations-2026.tex` or `reappointment-letters.tex` input, and link it
 from the appropriate evidence note. Use a stable suffix under the existing
 mark. Name evidence files descriptively with words joined by `_` and a single
 terminal `.pdf` (no other `.` in the name), e.g. `<filename_with_words>.pdf`.

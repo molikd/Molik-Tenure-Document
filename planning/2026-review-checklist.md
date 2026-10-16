@@ -32,7 +32,7 @@ David clarified that the proposed 800-word accomplishments and 400-word goals ma
 
 ## Remaining assembly and policy work
 
-- [ ] Obtain official worksheet, current position description and all applicable annual evaluations; 2025 and 2026 evaluations and prior letter are now included.
+- [ ] Confirm current position description covers both review years; 2025 and 2026 evaluations and prior supervisor letter are included. Per the supplied October 16 order, the worksheet link is in Employment History and the recommendation form stays blank until final tenure/promotion.
 - [ ] Verify the transmittal form and authorized signer; never prefill votes/signatures.
 - [ ] Reconcile template reporting window with cumulative pre-K-State context in procedures.
 - [ ] Obtain supervisor's annual/average workload statement if university Section II applies; High/Medium/Low evaluation weights are not percentages.

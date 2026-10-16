@@ -23,18 +23,21 @@ Source: https://www.k-state.edu/provost/policies-resources/evaluation-promotion-
 
 ## Submission priorities
 
-1. Resolve the missing current-year recommendation/transmittal form and official
-   Annual Status Review Worksheet with HR. The compiled packet still contains an
-   explicit pending-form page and a Working Draft cover; do not treat it as a
-   finished submission until the disposition of these forms is known.
+1. Updated per the candidate's supplied order: the recommendation form remains
+   blank for annual review and is completed at final tenure/promotion. The annual
+   status worksheet is represented by its link in Employment History.
 2. Confirm whether Tara also needs to sign the consultation acknowledgment on
    evaluation page 14. Both signatures already appear on the ratings page 5.
-3. Confirm that the retained position description is current and whether a
-   separate supervisor workload statement is required for this annual review.
-4. Check current instructions for document placement: the published list places
-   position descriptions, evaluations and prior recommendation letters before
-   the CV. The existing repository assembly puts these in the supplementary
-   material after the CV; this review did not silently restructure the packet.
+3. Confirm that the retained position description covers both review years.
+4. Reordered the packet: directed, non-directed and RSCAD evidence follows each
+   relevant summary; position description and 2025/2026 evaluations follow RSCAD;
+   the previous supervisor letter follows evaluations and precedes the Vita.
+   The chronology and source notes/index follow the Vita as supporting material.
+5. The newly supplied `2026.02_molik_tenure_letter_signed.pdf` is byte-identical
+   to retained P1.3 (`evidence/2025/reappointment-letter-signed.pdf`), SHA-256
+   `36af4e3b37635758bb639f714e40201a17dfe5c4849d4b560228d8f7046c3314`.
+   It is Tara Coleman's February 10, 2026 recommendation with committee feedback,
+   not a Dean's congratulatory letter. All four pages remain included.
 
 ## Optional evaluation polish if a replacement is being issued
 
@@ -54,7 +57,8 @@ The supervisor's wording is preserved as supplied.
 
 Both portfolio and CV builds succeeded. Static checks passed with the existing
 dateless software bibliography warning; 11 unit tests passed with 3 opt-in
-tests skipped. The rebuilt portfolio has 532 pages; P1.4 starts on PDF page 62.
+tests skipped. The earlier evaluation-addition build had 532 pages; page locations have changed
+following the document-order correction.
 The retained evaluation hash matches the supplied original. Existing font and
 underfull-box warnings remain. The documented temporary ARM Biber workaround
 was required for the installed macOS universal binary.
@@ -63,3 +67,12 @@ The signed original is retained separately from `evidence/2026/evaluation_2026_p
 The latter is generated using `qpdf --flatten-annotations=all` to preserve the
 visible digital signature during LaTeX inclusion. It is a display derivative,
 not a cryptographically signed original; its hash is recorded in the manifest.
+
+## Document-order verification
+
+Pulled main through `9290d6d` before editing. The reordered 537-page packet places
+P1.3 on PDF pages 520–523, immediately before the Vita on page 524. All four
+letter pages and the source signatures were visually checked. The blank
+recommendation page transcribes the retained form fields without the obsolete
+Year 1 / January 2025 header. ModernCV footer width now accommodates the full
+packet page count. All retained source PDF hashes remain unchanged.

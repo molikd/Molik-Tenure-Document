@@ -40,7 +40,7 @@ The compiled evidence index makes that provenance explicit.
 ## Open before final submission
 
 - [ ] Confirm Year 2 annual-review track, formal reporting window, governing criteria and October 16 deadline with supervisor/HR. This draft uses the named calendar placement; it is not a final-tenure application.
-- [ ] Obtain official Annual Status Review Worksheet, current recommendation form, workload statement, applicable position descriptions. The supplied 2026 evaluation is now included as P1.4 (October 16); the supervisor acknowledgment line on source page 14 is blank. The Year 1 / January 2025 recommendation PDF remains in the repository but is replaced in the compiled front matter by an explicit current-form placeholder. The existing position-description PDF remains included pending currentness verification.
+- [ ] Confirm the retained position description covers both years and whether a separate workload statement is applicable. Per the candidate's October 16 instructions, Employment History links to the Annual Status Worksheet and the recommendation form stays blank until final tenure/promotion. The 2025 and 2026 evaluations and prior supervisor letter are included. The supervisor acknowledgment line on 2026 evaluation page 14 is blank; both signatures appear on page 5.
 - [ ] Confirm final section/evidence placement and reviewer access. The source index is a draft appendix, not a substitute for original message exports; private sources remain access-controlled.
 - [ ] Retain fully signed MOU scan, LFPS officer term record and selected professional excerpts without unnecessary personnel details.
 - [ ] Obtain September 16 IUSE meeting outcomes after the meeting; no attendance, decisions or proposal submission are inferred yet.
@@ -179,3 +179,11 @@ the JOE, KO-AI, K-REx/HAIL and BOER milestones; Non-Directed Service adds propos
 CyberBio27 leadership; Research/Creative adds Genome Report guidance and MOLT,
 and extends the existing AgBioData coordination entry. The October supplement
 is now a linked chronology rather than a second accomplishment narrative.
+
+## October 16 supplied document order
+
+The candidate clarified that the recommendation form stays blank until final
+tenure/promotion and Employment History links to the Annual Status Worksheet.
+These supersede the earlier missing-form warnings. Evidence is now placed with
+each summary; annual position/evaluation records and the supervisor letter precede
+the Vita. The newly supplied February 2026 letter matches retained P1.3 exactly.
