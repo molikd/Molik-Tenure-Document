@@ -4,8 +4,8 @@ Assembly issue: [hail-local #53](https://github.com/molikd/hail-local/issues/53)
 Broader portfolio tracker: [#4](https://github.com/molikd/Molik-Tenure-Document/issues/4).
 
 The portfolio ends with its source notes, a linked supplementary-material index,
-and 28 included PDF documents (473 source pages selected from 29 retained
-originals totaling 539 pages). `supplements-2026.tex` controls
+and 29 included PDF documents (497 source pages selected from 30 retained
+originals totaling 563 pages). `supplements-2026.tex` controls
 order. Each page has its evidence mark, document number, source page position,
 and portfolio page number, outside the source image. Narrative tags display plain-language labels such as
 `[EVIDENCE: Funding and proposal records]`. Tags in the Statement are unlinked;
@@ -60,3 +60,13 @@ direct source observations for seven additional developments. Private mailbox,
 Teams and working-document exports remain outstanding; observations are labeled
 rather than presented as embedded original evidence. See
 [the discovery report](../planning/2026-10-15-update-discovery-report.md).
+
+October 16: P1.4 adds the candidate-supplied 24-page 2026 evaluation, retained
+byte-identical with its digital signature. Both signatures appear on the ratings
+page (5); the supervisor acknowledgment line on page 14 is blank. The 2025
+evaluation remains included. See the final submission review for remaining items.
+
+The signed original is retained separately from `evidence/2026/evaluation_2026_packet_display.pdf`.
+The latter is generated using `qpdf --flatten-annotations=all` to preserve the
+visible digital signature during LaTeX inclusion. It is a display derivative,
+not a cryptographically signed original; its hash is recorded in the manifest.

@@ -30,8 +30,11 @@ class SupplementTests(unittest.TestCase):
                     self.assertNotIn('supplement-' + record['mark'] + ']', index)
                     self.assertIn(record['path'], index)
                     continue
+                assembly_path = record.get('assembly_path', record['path'])
+                if 'assembly_path' in record:
+                    self.assertEqual(hashlib.sha256((ROOT / assembly_path).read_bytes()).hexdigest(), record['assembly_sha256'])
                 selection = '' if pages is None else ','.join(map(str, pages))
-                expected.append((selection, record['mark'], record['title'], record['path'], str(record['pages'])))
+                expected.append((selection, record['mark'], record['title'], assembly_path, str(record['pages'])))
                 self.assertIn('supplement-' + record['mark'] + ']', index)
                 self.assertIn('evidence-' + record['mark'].split('.')[0] + '}', index)
         self.assertEqual(includes, expected)

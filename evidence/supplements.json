@@ -27,6 +27,17 @@
     "note": ""
   },
   {
+    "mark": "P1.4",
+    "title": "2026 evaluation",
+    "path": "evidence/2026/evaluation_signed_2026.pdf",
+    "source": "Candidate-supplied 2026-self-evaluation-Molik.pdf, October 16, 2026",
+    "pages": 24,
+    "sha256": "bd19083b8f0fc55f95d10926cf7a64274214c1a0a6920405caec60d60d189e47",
+    "note": "Retained byte-identical, including digital signature. Ratings page 5 has supervisor and employee signatures; consultation acknowledgment page 14 has employee signature but blank supervisor line. Overall Exceeds Expectations; individual Meets ratings remain distinct. Separate packet display copy flattens annotation appearances so the visible digital signature survives LaTeX inclusion; it is not a cryptographically signed original.",
+    "assembly_path": "evidence/2026/evaluation_2026_packet_display.pdf",
+    "assembly_sha256": "7b92ab9c406ad66540fd0213f5d9bb74b1a41dcc708bbabb2575a112e4b7ee17"
+  },
+  {
     "mark": "L5.1",
     "title": "June 2026 OPE landscape",
     "path": "evidence/2026/ope-landscape-june-2026.pdf",
