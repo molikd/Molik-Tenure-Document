@@ -2,7 +2,7 @@
 
 David Molik | Monday, November 2, 2026
 
-Draft for delivery. The speech is 851 words, about 6.5–7.1 minutes at 120–130 words per minute before pauses. Read only the speech below; preparation notes follow it.
+Draft for delivery. The speech is 1,147 words, about 7.2–8.2 minutes at a brisk 140–160 words per minute before pauses. Read only the speech below; preparation notes follow it.
 
 ## Speech
 
@@ -15,6 +15,8 @@ Scholarly communication encompasses the creation, publication, dissemination, pr
 Sustainability is both my objective and an ethical framework for that work. I distinguish four dimensions. Financial sustainability requires credible funding for our commitments. Operational sustainability requires defined responsibilities, documented workflows, and sufficient staffing. Technical sustainability requires maintainable infrastructure, interoperability, and preservation. Intellectual sustainability requires transferable expertise and the capacity to evaluate and improve our services.
 
 These dimensions are interdependent. Funding alone cannot sustain a service whose operation depends on one person's knowledge. Technical sophistication cannot compensate for inadequate maintenance. My responsibility is institutional continuity: services that remain dependable beyond their initial implementation and beyond any individual, including me.
+
+Accepting a journal or a dataset creates a continuing stewardship obligation. We need to account for editorial coordination, description, preservation, accessibility, and eventual migration. Those obligations belong in the initial service decision. The June OPE landscape I wrote establishes proposed priorities across our four service areas, connecting infrastructure decisions with staffing, funding, and professional development. It gives us a common basis for evaluating expansion.
 
 Tara's evaluation identifies two priorities: sustainable commitments and clearer communication of specialized work. Both warrant attention.
 
@@ -30,13 +32,21 @@ Integration also occurs through collaboration. With Gwen Sibley, I taught data-c
 
 I have also helped develop student roles with designated librarian mentors and supported Gwen's proposal development while preserving her ownership. Professional development is a career-long responsibility. I intend to pursue it with explicit objectives and demonstrate its application.
 
-Three accomplishments illustrate the contribution.
+That mentoring involved successive reviews of Gwen's William T. Grant letter of inquiry: refining the research question, methodology, evidence, and funder alignment. She incorporated recommendations and retained authorship. To me, that is a concrete contribution to departmental capacity. Supporting a colleague's independent research leadership distributes expertise and responsibility, which is also how I intend to make my own workload more sustainable.
+
+Four accomplishments illustrate the contribution.
 
 First, the Journal of Extension. I led New Prairie Press's production-management proposal, submitted October 1, with Ryan involved in the interview process. Since the portfolio submission, we have advanced to the next interview round. We are still competing, but advancement through external review is a substantive milestone. The prospective partnership also requires exactly the analysis I've described: staffing, responsibilities, costs, and operational sustainability.
 
 Second, publication reporting. At the request of the Office of the Vice President for Research, I developed HAIL and HAIL-local to aggregate and connect publication records. The question is straightforward: what scholarship does K-State produce, and how reliably can we characterize it? I've presented the approach to campus colleagues; preliminary reports are available, with validation continuing. This applies library expertise in metadata and discovery to institutional assessment.
 
+The methodological issue is interpretation. An incomplete publication record can misrepresent institutional activity. Missing information must remain distinguishable from an observed absence, and coverage limitations need to accompany the results. HAIL's development addresses those distinctions. The objective is defensible institutional evidence, with enough provenance and transparency to evaluate what a report actually represents.
+
 Third, research informing publishing practice. I co-authored *How to write (and review) a Genome Report*, translating scientific reporting standards into guidance for authors, reviewers, and publishers. Genomics supplies the disciplinary context; the broader question is what documentation supports evaluation and reuse. My contributions to *The Future is FAIR* address related data-management and sharing practices. AgBioData's Mission and Leadership Award recognized my contributions to that community this year. Those relationships and experiences inform my work here.
+
+Fourth, research development. As Library Lead Research Officer, I bring library expertise into proposal development while responsibilities and budgets are still negotiable. For the proposed regional AI hub, I delivered a draft data-management and sharing plan in October and supported budget preparation. The plan connects metadata, provenance, repositories, preservation, and annual stewardship review. Those provisions define a substantive library contribution to research design.
+
+Alongside that service work, my investigator-led research received a $13,417 digital-agriculture seed award for a research-data platform. That is awarded support; the regional hub remains proposal work. Both illustrate the connection I am developing between research and library infrastructure. Funding can initiate a project, while explicit stewardship responsibilities help establish the conditions for its continuity.
 
 My central responsibility remains OPE leadership. Publishing partnerships, research infrastructure, and professional networks contribute to that responsibility through service development and departmental capacity.
 
@@ -46,12 +56,13 @@ Lastly, I believe my record warrants a discussion of early tenure. I've asked Ta
 
 ## Preparation notes
 
-- **Timing:** Allow time for pauses and emphasis. Rehearse aloud before delivery; the ten-minute limit includes the opening and closing.
-- **Shorter version:** If rehearsal runs long, omit the paragraph beginning “I have also helped develop student roles” and shorten the research example to the Genome Report article. Keep the library-learning discussion and both responses to Tara's current evaluation.
+- **Timing:** This version adds 296 words, approximately 1.9–2.1 minutes at 140–160 words per minute. Allow time for pauses and emphasis. Rehearse aloud before delivery; the ten-minute limit includes the opening and closing.
+- **Shorter version:** If rehearsal runs long, omit the paragraphs beginning “That mentoring involved” and “The methodological issue is interpretation.” This removes about 115 words while retaining all four accomplishments, the library-integration discussion, both responses to Tara's current evaluation, and the early-tenure request.
 - **Current evaluation:** The two concerns addressed above are communication for nonspecialists and a sustainable portfolio of commitments, including Tara's observation about taking on additional projects when others encounter roadblocks. See [signed 2026 evaluation](../evidence/2026/evaluation_signed_2026.pdf), source pages 12–13; the candidate's response is on page 15. Professional reading, conferences, workshops, and supervisory practices are described on pages 7–8.
 - **Earlier feedback:** The library-science learning recommendation is on source page 3 of the [February 10 reappointment letter](../evidence/2025/reappointment-letter-signed.pdf). Its separate comment about overly conciliatory supervision is on page 1; it is not the second concern in Tara's current evaluation.
 - **Response to the background comment:** The speech distinguishes a nontraditional professional background from a demonstrated knowledge gap. It asks for specific skills, relevance to assigned responsibilities, and evidence of progress without accepting a general deficit. The reference to a formal qualification requests clarity; it does not assert that the committee has required an MLIS or certificate. Training examples are recorded in [Directed service](../directed.tex), under library-science and leadership development, and were also identified in David's edits to this draft.
 - **Opening framework:** [Statement of accomplishments](../achievements.tex), opening discussion of scholarly communication and the four sustainability dimensions. [Directed service](../directed.tex) supports the workshop, repository, student-mentoring, proposal-mentoring, outreach, Journal of Extension, and publication-reporting examples. [Research and creative activity](../researchandcreative.tex) supports the publication examples; the statement of accomplishments records the AgBioData award.
+- **Expanded examples:** [Directed service](../directed.tex) documents the June OPE landscape, successive William T. Grant proposal reviews, and the October 13 draft data-management plan and budget preparation for the proposed OAK-AI/KO-AI hub. [Research and creative activity](../researchandcreative.tex) documents HAIL's treatment of missing information and record coverage, and the $13,417 ID3A seed award. The speech distinguishes the delivered hub planning contribution from the investigator-led award; it claims neither hub funding nor validated institutional reporting outcomes.
 - **Journal of Extension update:** Advancement to the next interview round comes from David's October 27, 2026 update for this speech. The portfolio documents the October 1 proposal and October 6 first-round invitation. The speech claims advancement, not selection or a contract; it adds no unconfirmed interview date or financial outcome. Refresh the sentence before delivery if the status changes.
 - **Cliff discussion:** The emphasis on showing continuing effort in library integration comes from David's October 27 account of his conversation with Cliff. The speech makes no claim that Cliff or the committee has endorsed the progress described.
 - **Early tenure:** David's added closing reports his request to Tara for a discussion of early tenure next year. The speech seeks guidance on objectives and readiness; it does not claim an agreed timetable, a formal declaration, or a commitment of support from Tara or the committee.
