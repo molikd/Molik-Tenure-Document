@@ -2,7 +2,7 @@
 
 David Molik | Monday, November 2, 2026
 
-Draft for delivery. The speech is 1,102 words, about 8.5–9.2 minutes at 120–130 words per minute before pauses. Read only the speech below; preparation notes follow it.
+Draft for delivery. The speech is 1,146 words, about 8.8–9.6 minutes at 120–130 words per minute before pauses. Read only the speech below; preparation notes follow it.
 
 ## Speech
 
@@ -40,7 +40,9 @@ The third is research that informs publishing practice. I co-authored *How to wr
 
 Across these examples, my central responsibility remains leading OPE. Publishing opportunities, research tools, and external relationships matter when they help us provide useful services and develop the people who sustain them.
 
-In the coming year, I want to make progress visible through clearer explanations of our work, commitments that match our capacity, and stronger connections across the Libraries through shared work. I am proud of what we are building and of the expertise I contribute. I welcome specific feedback that helps me build on that contribution. Thank you.
+In the coming year, I will focus on clearer communication, a sustainable workload, and stronger connections across the Libraries. I am proud of our work and the expertise I contribute.
+
+Lastly, I believe my record provides a strong basis for discussing early tenure. I have asked Tara to set aside time to discuss the possibility of pursuing early tenure next year and the objectives I would need to meet. I would welcome the committee's guidance on specific expectations for communication, workload, and library integration, so I can make that decision with a clear understanding of what progress it expects. Thank you.
 
 ## Preparation notes
 
@@ -52,3 +54,4 @@ In the coming year, I want to make progress visible through clearer explanations
 - **Opening framework:** [Statement of accomplishments](../achievements.tex), opening discussion of scholarly communication and the four sustainability dimensions. [Directed service](../directed.tex) supports the workshop, repository, student-mentoring, proposal-mentoring, outreach, Journal of Extension, and publication-reporting examples. [Research and creative activity](../researchandcreative.tex) supports the publication examples; the statement of accomplishments records the AgBioData award.
 - **Journal of Extension update:** Advancement to the next interview round comes from David's October 27, 2026 update for this speech. The portfolio documents the October 1 proposal and October 6 first-round invitation. The speech claims advancement, not selection or a contract; it adds no unconfirmed interview date or financial outcome. Refresh the sentence before delivery if the status changes.
 - **Cliff discussion:** The emphasis on showing continuing effort in library integration comes from David's October 27 account of his conversation with Cliff. The speech makes no claim that Cliff or the committee has endorsed the progress described.
+- **Early tenure:** David's added closing reports his request to Tara for a discussion of early tenure next year. The speech seeks guidance on objectives and readiness; it does not claim an agreed timetable, a formal declaration, or a commitment of support from Tara or the committee.
